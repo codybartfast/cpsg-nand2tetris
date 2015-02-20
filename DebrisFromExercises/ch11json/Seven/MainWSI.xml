@@ -1,0 +1,55 @@
+<class>
+  <keyword> class </keyword>
+  <identifier kind="NONE" type="Main" index="0"> Main </identifier>
+  <symbol> { </symbol>
+  <subroutineDec VarCount=0>
+    <keyword> function </keyword>
+    <keyword> void </keyword>
+    <identifier kind="NONE" type="void" index="0"> main </identifier>
+    <symbol> ( </symbol>
+    <parameterList>
+    </parameterList>
+    <symbol> ) </symbol>
+    <subroutineBody>
+      <symbol> { </symbol>
+      <statements>
+        <doStatement>
+          <keyword> do </keyword>
+          <identifier kind="NONE" type="" index="0"> Output </identifier>
+          <symbol> . </symbol>
+          <identifier kind="NONE" type="" index="0"> printInt </identifier>
+          <symbol> ( </symbol>
+          <expressionList>
+            <expression>
+              <term>
+                <integerConstant> 1 </integerConstant>
+              </term>
+              <symbol> + </symbol>
+              <term>
+                <symbol> ( </symbol>
+                <expression>
+                  <term>
+                    <integerConstant> 2 </integerConstant>
+                  </term>
+                  <symbol> * </symbol>
+                  <term>
+                    <integerConstant> 3 </integerConstant>
+                  </term>
+                </expression>
+                <symbol> ) </symbol>
+              </term>
+            </expression>
+          </expressionList>
+          <symbol> ) </symbol>
+          <symbol> ; </symbol>
+        </doStatement>
+        <returnStatement>
+          <keyword> return </keyword>
+          <symbol> ; </symbol>
+        </returnStatement>
+      </statements>
+      <symbol> } </symbol>
+    </subroutineBody>
+  </subroutineDec>
+  <symbol> } </symbol>
+</class>

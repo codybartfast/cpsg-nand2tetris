@@ -1,0 +1,132 @@
+// This file is part of www.nand2tetris.org
+// and the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// File name: projects/12/Math.jack
+
+/**
+ * A basic math library.
+ */
+class Math {
+
+    /** Initializes the library. */
+    function void init() {
+      return;
+    }
+
+    /** Returns the absolute value of x. */
+    function int abs(int x) {
+      if(x < 0){
+        let x = -x;
+      }
+      return x;
+    }
+
+    /** Returns the product of x and y. */
+    function int multiply(int x, int y) {
+      var int x_abs, y_abs, z, i;
+      var boolean negResult;
+      let x_abs = Math.abs(x);
+      let y_abs = Math.abs(y);
+      let z = 0;
+      let i = 0;
+      let negResult = false;
+      if (~(x = x_abs)){
+        let negResult = ~negResult;
+      }
+      if (~(y = y_abs)){
+        let negResult = ~negResult;
+      }
+      
+      while (i < y_abs) {
+        let z = z + x_abs;
+        let i = i + 1;
+      }
+      if (negResult) {
+        return -z;
+      }
+      return z;
+    }
+
+    /** Returns the integer part of x/y. */
+    function int divide(int x, int y) {
+      var int x_abs, y_abs, z, i;
+      var boolean negResult;
+      let x_abs = Math.abs(x);
+      let y_abs = Math.abs(y);
+      let z = x_abs;
+      let i = 0;
+      let negResult = false;
+      if (~(x = x_abs)){
+        let negResult = ~negResult;
+      }
+      if (~(y = y_abs)){
+        let negResult = ~negResult;
+      }
+      
+      while (~(z < y_abs)) {
+        let z = z - y_abs;
+        let i = i + 1;
+      }
+      
+      if (negResult) {
+        return -i;
+      }
+      return i;
+    }
+
+    /** Returns the integer part of the square root of x. */
+    function int sqrt(int x) {
+    		var int lower;
+     		var int upper;
+     		var int next;
+     		
+     		if(x < 0){
+     			  do Sys.error(-1);
+     		}
+        if(x = 0){
+        	  return 0;
+        }
+        if(x = 1){
+        	  return 1;
+        }
+        
+        let lower = 1;
+        let upper = 2;
+        while(Math.multiply(upper, upper) < (x + 1)){
+          	let lower = upper;
+          	let upper = upper + upper;
+        }
+        
+        while(true){
+          	let next = lower + ((upper - lower) / 2);
+          	if(next = lower){
+          		  return next;
+          	}
+          	if(Math.multiply(next, next) < (x + 1)){
+          		  let lower = next;
+          	}
+          	else{
+          		  let upper = next;
+            }
+        }        
+    	  return 0; // should never be reached
+    }
+
+    /** Returns the greater number. */
+    function int max(int a, int b) {
+      if (b > a) {
+        return b;
+      } else {
+        return a;
+      }
+    }
+
+    /** Returns the smaller number. */
+    function int min(int a, int b) {
+      if (b < a) {
+        return b;
+      } else {
+        return a;
+      }
+    }
+}

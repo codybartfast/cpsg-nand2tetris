@@ -1,0 +1,850 @@
+<class>
+  <keyword> class </keyword>
+  <identifier type="Main" beingDefined="True" kind="STATIC" category="class" index="0"> Main </identifier>
+  <symbol> { </symbol>
+  <subroutineDec>
+    <keyword> function </keyword>
+    <keyword> void </keyword>
+    <identifier type="void" beingDefined="True" kind="STATIC" category="subroutine" index="1"> main </identifier>
+    <symbol> ( </symbol>
+    <parameterList>
+    </parameterList>
+    <symbol> ) </symbol>
+    <subroutineBody>
+      <symbol> { </symbol>
+      <varDec>
+        <keyword> var </keyword>
+        <identifier type="" beingDefined="False" kind="NONE" category="" index="0"> Array </identifier>
+        <identifier type="Array" beingDefined="True" kind="VAR" category="variable" index="0"> a </identifier>
+        <symbol> , </symbol>
+        <identifier type="Array" beingDefined="True" kind="VAR" category="variable" index="1"> b </identifier>
+        <symbol> , </symbol>
+        <identifier type="Array" beingDefined="True" kind="VAR" category="variable" index="2"> c </identifier>
+        <symbol> ; </symbol>
+      </varDec>
+      <statements>
+        <letStatement>
+          <keyword> let </keyword>
+          <identifier type="Array" beingDefined="False" kind="VAR" category="variable" index="0"> a </identifier>
+          <symbol> = </symbol>
+          <expression>
+            <term>
+              <identifier type="" beingDefined="False" kind="NONE" category="" index="0"> Array </identifier>
+              <symbol> . </symbol>
+              <identifier type="" beingDefined="False" kind="NONE" category="" index="0"> new </identifier>
+              <symbol> ( </symbol>
+              <expressionList>
+                <expression>
+                  <term>
+                    <integerConstant> 10 </integerConstant>
+                  </term>
+                </expression>
+              </expressionList>
+              <symbol> ) </symbol>
+            </term>
+          </expression>
+          <symbol> ; </symbol>
+        </letStatement>
+        <letStatement>
+          <keyword> let </keyword>
+          <identifier type="Array" beingDefined="False" kind="VAR" category="variable" index="1"> b </identifier>
+          <symbol> = </symbol>
+          <expression>
+            <term>
+              <identifier type="" beingDefined="False" kind="NONE" category="" index="0"> Array </identifier>
+              <symbol> . </symbol>
+              <identifier type="" beingDefined="False" kind="NONE" category="" index="0"> new </identifier>
+              <symbol> ( </symbol>
+              <expressionList>
+                <expression>
+                  <term>
+                    <integerConstant> 5 </integerConstant>
+                  </term>
+                </expression>
+              </expressionList>
+              <symbol> ) </symbol>
+            </term>
+          </expression>
+          <symbol> ; </symbol>
+        </letStatement>
+        <letStatement>
+          <keyword> let </keyword>
+          <identifier type="Array" beingDefined="False" kind="VAR" category="variable" index="2"> c </identifier>
+          <symbol> = </symbol>
+          <expression>
+            <term>
+              <identifier type="" beingDefined="False" kind="NONE" category="" index="0"> Array </identifier>
+              <symbol> . </symbol>
+              <identifier type="" beingDefined="False" kind="NONE" category="" index="0"> new </identifier>
+              <symbol> ( </symbol>
+              <expressionList>
+                <expression>
+                  <term>
+                    <integerConstant> 1 </integerConstant>
+                  </term>
+                </expression>
+              </expressionList>
+              <symbol> ) </symbol>
+            </term>
+          </expression>
+          <symbol> ; </symbol>
+        </letStatement>
+        <letStatement>
+          <keyword> let </keyword>
+          <identifier type="Array" beingDefined="False" kind="VAR" category="variable" index="0"> a </identifier>
+          <symbol> [ </symbol>
+          <expression>
+            <term>
+              <integerConstant> 3 </integerConstant>
+            </term>
+          </expression>
+          <symbol> ] </symbol>
+          <symbol> = </symbol>
+          <expression>
+            <term>
+              <integerConstant> 2 </integerConstant>
+            </term>
+          </expression>
+          <symbol> ; </symbol>
+        </letStatement>
+        <letStatement>
+          <keyword> let </keyword>
+          <identifier type="Array" beingDefined="False" kind="VAR" category="variable" index="0"> a </identifier>
+          <symbol> [ </symbol>
+          <expression>
+            <term>
+              <integerConstant> 4 </integerConstant>
+            </term>
+          </expression>
+          <symbol> ] </symbol>
+          <symbol> = </symbol>
+          <expression>
+            <term>
+              <integerConstant> 8 </integerConstant>
+            </term>
+          </expression>
+          <symbol> ; </symbol>
+        </letStatement>
+        <letStatement>
+          <keyword> let </keyword>
+          <identifier type="Array" beingDefined="False" kind="VAR" category="variable" index="0"> a </identifier>
+          <symbol> [ </symbol>
+          <expression>
+            <term>
+              <integerConstant> 5 </integerConstant>
+            </term>
+          </expression>
+          <symbol> ] </symbol>
+          <symbol> = </symbol>
+          <expression>
+            <term>
+              <integerConstant> 4 </integerConstant>
+            </term>
+          </expression>
+          <symbol> ; </symbol>
+        </letStatement>
+        <letStatement>
+          <keyword> let </keyword>
+          <identifier type="Array" beingDefined="False" kind="VAR" category="variable" index="1"> b </identifier>
+          <symbol> [ </symbol>
+          <expression>
+            <term>
+              <identifier type="Array" beingDefined="False" kind="VAR" category="variable" index="0"> a </identifier>
+              <symbol> [ </symbol>
+              <expression>
+                <term>
+                  <integerConstant> 3 </integerConstant>
+                </term>
+              </expression>
+              <symbol> ] </symbol>
+            </term>
+          </expression>
+          <symbol> ] </symbol>
+          <symbol> = </symbol>
+          <expression>
+            <term>
+              <identifier type="Array" beingDefined="False" kind="VAR" category="variable" index="0"> a </identifier>
+              <symbol> [ </symbol>
+              <expression>
+                <term>
+                  <integerConstant> 3 </integerConstant>
+                </term>
+              </expression>
+              <symbol> ] </symbol>
+            </term>
+            <symbol> + </symbol>
+            <term>
+              <integerConstant> 3 </integerConstant>
+            </term>
+          </expression>
+          <symbol> ; </symbol>
+        </letStatement>
+        <letStatement>
+          <keyword> let </keyword>
+          <identifier type="Array" beingDefined="False" kind="VAR" category="variable" index="0"> a </identifier>
+          <symbol> [ </symbol>
+          <expression>
+            <term>
+              <identifier type="Array" beingDefined="False" kind="VAR" category="variable" index="1"> b </identifier>
+              <symbol> [ </symbol>
+              <expression>
+                <term>
+                  <identifier type="Array" beingDefined="False" kind="VAR" category="variable" index="0"> a </identifier>
+                  <symbol> [ </symbol>
+                  <expression>
+                    <term>
+                      <integerConstant> 3 </integerConstant>
+                    </term>
+                  </expression>
+                  <symbol> ] </symbol>
+                </term>
+              </expression>
+              <symbol> ] </symbol>
+            </term>
+          </expression>
+          <symbol> ] </symbol>
+          <symbol> = </symbol>
+          <expression>
+            <term>
+              <identifier type="Array" beingDefined="False" kind="VAR" category="variable" index="0"> a </identifier>
+              <symbol> [ </symbol>
+              <expression>
+                <term>
+                  <identifier type="Array" beingDefined="False" kind="VAR" category="variable" index="0"> a </identifier>
+                  <symbol> [ </symbol>
+                  <expression>
+                    <term>
+                      <integerConstant> 5 </integerConstant>
+                    </term>
+                  </expression>
+                  <symbol> ] </symbol>
+                </term>
+              </expression>
+              <symbol> ] </symbol>
+            </term>
+            <symbol> * </symbol>
+            <term>
+              <identifier type="Array" beingDefined="False" kind="VAR" category="variable" index="1"> b </identifier>
+              <symbol> [ </symbol>
+              <expression>
+                <term>
+                  <integerConstant> 7 </integerConstant>
+                </term>
+                <symbol> - </symbol>
+                <term>
+                  <identifier type="Array" beingDefined="False" kind="VAR" category="variable" index="0"> a </identifier>
+                  <symbol> [ </symbol>
+                  <expression>
+                    <term>
+                      <integerConstant> 3 </integerConstant>
+                    </term>
+                  </expression>
+                  <symbol> ] </symbol>
+                </term>
+                <symbol> - </symbol>
+                <term>
+                  <identifier type="Main" beingDefined="False" kind="STATIC" category="class" index="0"> Main </identifier>
+                  <symbol> . </symbol>
+                  <identifier type="int" beingDefined="False" kind="STATIC" category="subroutine" index="2"> double </identifier>
+                  <symbol> ( </symbol>
+                  <expressionList>
+                    <expression>
+                      <term>
+                        <integerConstant> 2 </integerConstant>
+                      </term>
+                    </expression>
+                  </expressionList>
+                  <symbol> ) </symbol>
+                </term>
+                <symbol> + </symbol>
+                <term>
+                  <integerConstant> 1 </integerConstant>
+                </term>
+              </expression>
+              <symbol> ] </symbol>
+            </term>
+          </expression>
+          <symbol> ; </symbol>
+        </letStatement>
+        <letStatement>
+          <keyword> let </keyword>
+          <identifier type="Array" beingDefined="False" kind="VAR" category="variable" index="2"> c </identifier>
+          <symbol> [ </symbol>
+          <expression>
+            <term>
+              <integerConstant> 0 </integerConstant>
+            </term>
+          </expression>
+          <symbol> ] </symbol>
+          <symbol> = </symbol>
+          <expression>
+            <term>
+              <keyword> null </keyword>
+            </term>
+          </expression>
+          <symbol> ; </symbol>
+        </letStatement>
+        <letStatement>
+          <keyword> let </keyword>
+          <identifier type="Array" beingDefined="False" kind="VAR" category="variable" index="2"> c </identifier>
+          <symbol> = </symbol>
+          <expression>
+            <term>
+              <identifier type="Array" beingDefined="False" kind="VAR" category="variable" index="2"> c </identifier>
+              <symbol> [ </symbol>
+              <expression>
+                <term>
+                  <integerConstant> 0 </integerConstant>
+                </term>
+              </expression>
+              <symbol> ] </symbol>
+            </term>
+          </expression>
+          <symbol> ; </symbol>
+        </letStatement>
+        <doStatement>
+          <keyword> do </keyword>
+          <identifier type="" beingDefined="False" kind="NONE" category="" index="0"> Output </identifier>
+          <symbol> . </symbol>
+          <identifier type="" beingDefined="False" kind="NONE" category="" index="0"> printString </identifier>
+          <symbol> ( </symbol>
+          <expressionList>
+            <expression>
+              <term>
+                <stringConstant> Test 1 - Required result: 5, Actual result:  </stringConstant>
+              </term>
+            </expression>
+          </expressionList>
+          <symbol> ) </symbol>
+          <symbol> ; </symbol>
+        </doStatement>
+        <doStatement>
+          <keyword> do </keyword>
+          <identifier type="" beingDefined="False" kind="NONE" category="" index="0"> Output </identifier>
+          <symbol> . </symbol>
+          <identifier type="" beingDefined="False" kind="NONE" category="" index="0"> printInt </identifier>
+          <symbol> ( </symbol>
+          <expressionList>
+            <expression>
+              <term>
+                <identifier type="Array" beingDefined="False" kind="VAR" category="variable" index="1"> b </identifier>
+                <symbol> [ </symbol>
+                <expression>
+                  <term>
+                    <integerConstant> 2 </integerConstant>
+                  </term>
+                </expression>
+                <symbol> ] </symbol>
+              </term>
+            </expression>
+          </expressionList>
+          <symbol> ) </symbol>
+          <symbol> ; </symbol>
+        </doStatement>
+        <doStatement>
+          <keyword> do </keyword>
+          <identifier type="" beingDefined="False" kind="NONE" category="" index="0"> Output </identifier>
+          <symbol> . </symbol>
+          <identifier type="" beingDefined="False" kind="NONE" category="" index="0"> println </identifier>
+          <symbol> ( </symbol>
+          <expressionList>
+          </expressionList>
+          <symbol> ) </symbol>
+          <symbol> ; </symbol>
+        </doStatement>
+        <doStatement>
+          <keyword> do </keyword>
+          <identifier type="" beingDefined="False" kind="NONE" category="" index="0"> Output </identifier>
+          <symbol> . </symbol>
+          <identifier type="" beingDefined="False" kind="NONE" category="" index="0"> printString </identifier>
+          <symbol> ( </symbol>
+          <expressionList>
+            <expression>
+              <term>
+                <stringConstant> Test 2 - Required result: 40, Actual result:  </stringConstant>
+              </term>
+            </expression>
+          </expressionList>
+          <symbol> ) </symbol>
+          <symbol> ; </symbol>
+        </doStatement>
+        <doStatement>
+          <keyword> do </keyword>
+          <identifier type="" beingDefined="False" kind="NONE" category="" index="0"> Output </identifier>
+          <symbol> . </symbol>
+          <identifier type="" beingDefined="False" kind="NONE" category="" index="0"> printInt </identifier>
+          <symbol> ( </symbol>
+          <expressionList>
+            <expression>
+              <term>
+                <identifier type="Array" beingDefined="False" kind="VAR" category="variable" index="0"> a </identifier>
+                <symbol> [ </symbol>
+                <expression>
+                  <term>
+                    <integerConstant> 5 </integerConstant>
+                  </term>
+                </expression>
+                <symbol> ] </symbol>
+              </term>
+            </expression>
+          </expressionList>
+          <symbol> ) </symbol>
+          <symbol> ; </symbol>
+        </doStatement>
+        <doStatement>
+          <keyword> do </keyword>
+          <identifier type="" beingDefined="False" kind="NONE" category="" index="0"> Output </identifier>
+          <symbol> . </symbol>
+          <identifier type="" beingDefined="False" kind="NONE" category="" index="0"> println </identifier>
+          <symbol> ( </symbol>
+          <expressionList>
+          </expressionList>
+          <symbol> ) </symbol>
+          <symbol> ; </symbol>
+        </doStatement>
+        <doStatement>
+          <keyword> do </keyword>
+          <identifier type="" beingDefined="False" kind="NONE" category="" index="0"> Output </identifier>
+          <symbol> . </symbol>
+          <identifier type="" beingDefined="False" kind="NONE" category="" index="0"> printString </identifier>
+          <symbol> ( </symbol>
+          <expressionList>
+            <expression>
+              <term>
+                <stringConstant> Test 3 - Required result: 0, Actual result:  </stringConstant>
+              </term>
+            </expression>
+          </expressionList>
+          <symbol> ) </symbol>
+          <symbol> ; </symbol>
+        </doStatement>
+        <doStatement>
+          <keyword> do </keyword>
+          <identifier type="" beingDefined="False" kind="NONE" category="" index="0"> Output </identifier>
+          <symbol> . </symbol>
+          <identifier type="" beingDefined="False" kind="NONE" category="" index="0"> printInt </identifier>
+          <symbol> ( </symbol>
+          <expressionList>
+            <expression>
+              <term>
+                <identifier type="Array" beingDefined="False" kind="VAR" category="variable" index="2"> c </identifier>
+              </term>
+            </expression>
+          </expressionList>
+          <symbol> ) </symbol>
+          <symbol> ; </symbol>
+        </doStatement>
+        <doStatement>
+          <keyword> do </keyword>
+          <identifier type="" beingDefined="False" kind="NONE" category="" index="0"> Output </identifier>
+          <symbol> . </symbol>
+          <identifier type="" beingDefined="False" kind="NONE" category="" index="0"> println </identifier>
+          <symbol> ( </symbol>
+          <expressionList>
+          </expressionList>
+          <symbol> ) </symbol>
+          <symbol> ; </symbol>
+        </doStatement>
+        <letStatement>
+          <keyword> let </keyword>
+          <identifier type="Array" beingDefined="False" kind="VAR" category="variable" index="2"> c </identifier>
+          <symbol> = </symbol>
+          <expression>
+            <term>
+              <keyword> null </keyword>
+            </term>
+          </expression>
+          <symbol> ; </symbol>
+        </letStatement>
+        <ifStatement>
+          <keyword> if </keyword>
+          <symbol> ( </symbol>
+          <expression>
+            <term>
+              <identifier type="Array" beingDefined="False" kind="VAR" category="variable" index="2"> c </identifier>
+            </term>
+            <symbol> = </symbol>
+            <term>
+              <keyword> null </keyword>
+            </term>
+          </expression>
+          <symbol> ) </symbol>
+          <symbol> { </symbol>
+          <statements>
+            <doStatement>
+              <keyword> do </keyword>
+              <identifier type="Main" beingDefined="False" kind="STATIC" category="class" index="0"> Main </identifier>
+              <symbol> . </symbol>
+              <identifier type="void" beingDefined="False" kind="STATIC" category="subroutine" index="3"> fill </identifier>
+              <symbol> ( </symbol>
+              <expressionList>
+                <expression>
+                  <term>
+                    <identifier type="Array" beingDefined="False" kind="VAR" category="variable" index="0"> a </identifier>
+                  </term>
+                </expression>
+                <symbol> , </symbol>
+                <expression>
+                  <term>
+                    <integerConstant> 10 </integerConstant>
+                  </term>
+                </expression>
+              </expressionList>
+              <symbol> ) </symbol>
+              <symbol> ; </symbol>
+            </doStatement>
+            <letStatement>
+              <keyword> let </keyword>
+              <identifier type="Array" beingDefined="False" kind="VAR" category="variable" index="2"> c </identifier>
+              <symbol> = </symbol>
+              <expression>
+                <term>
+                  <identifier type="Array" beingDefined="False" kind="VAR" category="variable" index="0"> a </identifier>
+                  <symbol> [ </symbol>
+                  <expression>
+                    <term>
+                      <integerConstant> 3 </integerConstant>
+                    </term>
+                  </expression>
+                  <symbol> ] </symbol>
+                </term>
+              </expression>
+              <symbol> ; </symbol>
+            </letStatement>
+            <letStatement>
+              <keyword> let </keyword>
+              <identifier type="Array" beingDefined="False" kind="VAR" category="variable" index="2"> c </identifier>
+              <symbol> [ </symbol>
+              <expression>
+                <term>
+                  <integerConstant> 1 </integerConstant>
+                </term>
+              </expression>
+              <symbol> ] </symbol>
+              <symbol> = </symbol>
+              <expression>
+                <term>
+                  <integerConstant> 33 </integerConstant>
+                </term>
+              </expression>
+              <symbol> ; </symbol>
+            </letStatement>
+            <letStatement>
+              <keyword> let </keyword>
+              <identifier type="Array" beingDefined="False" kind="VAR" category="variable" index="2"> c </identifier>
+              <symbol> = </symbol>
+              <expression>
+                <term>
+                  <identifier type="Array" beingDefined="False" kind="VAR" category="variable" index="0"> a </identifier>
+                  <symbol> [ </symbol>
+                  <expression>
+                    <term>
+                      <integerConstant> 7 </integerConstant>
+                    </term>
+                  </expression>
+                  <symbol> ] </symbol>
+                </term>
+              </expression>
+              <symbol> ; </symbol>
+            </letStatement>
+            <letStatement>
+              <keyword> let </keyword>
+              <identifier type="Array" beingDefined="False" kind="VAR" category="variable" index="2"> c </identifier>
+              <symbol> [ </symbol>
+              <expression>
+                <term>
+                  <integerConstant> 1 </integerConstant>
+                </term>
+              </expression>
+              <symbol> ] </symbol>
+              <symbol> = </symbol>
+              <expression>
+                <term>
+                  <integerConstant> 77 </integerConstant>
+                </term>
+              </expression>
+              <symbol> ; </symbol>
+            </letStatement>
+            <letStatement>
+              <keyword> let </keyword>
+              <identifier type="Array" beingDefined="False" kind="VAR" category="variable" index="1"> b </identifier>
+              <symbol> = </symbol>
+              <expression>
+                <term>
+                  <identifier type="Array" beingDefined="False" kind="VAR" category="variable" index="0"> a </identifier>
+                  <symbol> [ </symbol>
+                  <expression>
+                    <term>
+                      <integerConstant> 3 </integerConstant>
+                    </term>
+                  </expression>
+                  <symbol> ] </symbol>
+                </term>
+              </expression>
+              <symbol> ; </symbol>
+            </letStatement>
+            <letStatement>
+              <keyword> let </keyword>
+              <identifier type="Array" beingDefined="False" kind="VAR" category="variable" index="1"> b </identifier>
+              <symbol> [ </symbol>
+              <expression>
+                <term>
+                  <integerConstant> 1 </integerConstant>
+                </term>
+              </expression>
+              <symbol> ] </symbol>
+              <symbol> = </symbol>
+              <expression>
+                <term>
+                  <identifier type="Array" beingDefined="False" kind="VAR" category="variable" index="1"> b </identifier>
+                  <symbol> [ </symbol>
+                  <expression>
+                    <term>
+                      <integerConstant> 1 </integerConstant>
+                    </term>
+                  </expression>
+                  <symbol> ] </symbol>
+                </term>
+                <symbol> + </symbol>
+                <term>
+                  <identifier type="Array" beingDefined="False" kind="VAR" category="variable" index="2"> c </identifier>
+                  <symbol> [ </symbol>
+                  <expression>
+                    <term>
+                      <integerConstant> 1 </integerConstant>
+                    </term>
+                  </expression>
+                  <symbol> ] </symbol>
+                </term>
+              </expression>
+              <symbol> ; </symbol>
+            </letStatement>
+          </statements>
+          <symbol> } </symbol>
+        </ifStatement>
+        <doStatement>
+          <keyword> do </keyword>
+          <identifier type="" beingDefined="False" kind="NONE" category="" index="0"> Output </identifier>
+          <symbol> . </symbol>
+          <identifier type="" beingDefined="False" kind="NONE" category="" index="0"> printString </identifier>
+          <symbol> ( </symbol>
+          <expressionList>
+            <expression>
+              <term>
+                <stringConstant> Test 4 - Required result: 77, Actual result:  </stringConstant>
+              </term>
+            </expression>
+          </expressionList>
+          <symbol> ) </symbol>
+          <symbol> ; </symbol>
+        </doStatement>
+        <doStatement>
+          <keyword> do </keyword>
+          <identifier type="" beingDefined="False" kind="NONE" category="" index="0"> Output </identifier>
+          <symbol> . </symbol>
+          <identifier type="" beingDefined="False" kind="NONE" category="" index="0"> printInt </identifier>
+          <symbol> ( </symbol>
+          <expressionList>
+            <expression>
+              <term>
+                <identifier type="Array" beingDefined="False" kind="VAR" category="variable" index="2"> c </identifier>
+                <symbol> [ </symbol>
+                <expression>
+                  <term>
+                    <integerConstant> 1 </integerConstant>
+                  </term>
+                </expression>
+                <symbol> ] </symbol>
+              </term>
+            </expression>
+          </expressionList>
+          <symbol> ) </symbol>
+          <symbol> ; </symbol>
+        </doStatement>
+        <doStatement>
+          <keyword> do </keyword>
+          <identifier type="" beingDefined="False" kind="NONE" category="" index="0"> Output </identifier>
+          <symbol> . </symbol>
+          <identifier type="" beingDefined="False" kind="NONE" category="" index="0"> println </identifier>
+          <symbol> ( </symbol>
+          <expressionList>
+          </expressionList>
+          <symbol> ) </symbol>
+          <symbol> ; </symbol>
+        </doStatement>
+        <doStatement>
+          <keyword> do </keyword>
+          <identifier type="" beingDefined="False" kind="NONE" category="" index="0"> Output </identifier>
+          <symbol> . </symbol>
+          <identifier type="" beingDefined="False" kind="NONE" category="" index="0"> printString </identifier>
+          <symbol> ( </symbol>
+          <expressionList>
+            <expression>
+              <term>
+                <stringConstant> Test 5 - Required result: 110, Actual result:  </stringConstant>
+              </term>
+            </expression>
+          </expressionList>
+          <symbol> ) </symbol>
+          <symbol> ; </symbol>
+        </doStatement>
+        <doStatement>
+          <keyword> do </keyword>
+          <identifier type="" beingDefined="False" kind="NONE" category="" index="0"> Output </identifier>
+          <symbol> . </symbol>
+          <identifier type="" beingDefined="False" kind="NONE" category="" index="0"> printInt </identifier>
+          <symbol> ( </symbol>
+          <expressionList>
+            <expression>
+              <term>
+                <identifier type="Array" beingDefined="False" kind="VAR" category="variable" index="1"> b </identifier>
+                <symbol> [ </symbol>
+                <expression>
+                  <term>
+                    <integerConstant> 1 </integerConstant>
+                  </term>
+                </expression>
+                <symbol> ] </symbol>
+              </term>
+            </expression>
+          </expressionList>
+          <symbol> ) </symbol>
+          <symbol> ; </symbol>
+        </doStatement>
+        <doStatement>
+          <keyword> do </keyword>
+          <identifier type="" beingDefined="False" kind="NONE" category="" index="0"> Output </identifier>
+          <symbol> . </symbol>
+          <identifier type="" beingDefined="False" kind="NONE" category="" index="0"> println </identifier>
+          <symbol> ( </symbol>
+          <expressionList>
+          </expressionList>
+          <symbol> ) </symbol>
+          <symbol> ; </symbol>
+        </doStatement>
+        <returnStatement>
+          <keyword> return </keyword>
+          <symbol> ; </symbol>
+        </returnStatement>
+      </statements>
+      <symbol> } </symbol>
+    </subroutineBody>
+  </subroutineDec>
+  <subroutineDec>
+    <keyword> function </keyword>
+    <keyword> int </keyword>
+    <identifier type="int" beingDefined="True" kind="STATIC" category="subroutine" index="2"> double </identifier>
+    <symbol> ( </symbol>
+    <parameterList>
+      <keyword> int </keyword>
+      <identifier type="int" beingDefined="True" kind="ARG" category="arg" index="0"> a </identifier>
+    </parameterList>
+    <symbol> ) </symbol>
+    <subroutineBody>
+      <symbol> { </symbol>
+      <statements>
+        <returnStatement>
+          <keyword> return </keyword>
+          <expression>
+            <term>
+              <identifier type="int" beingDefined="False" kind="ARG" category="arg" index="0"> a </identifier>
+            </term>
+            <symbol> * </symbol>
+            <term>
+              <integerConstant> 2 </integerConstant>
+            </term>
+          </expression>
+          <symbol> ; </symbol>
+        </returnStatement>
+      </statements>
+      <symbol> } </symbol>
+    </subroutineBody>
+  </subroutineDec>
+  <subroutineDec>
+    <keyword> function </keyword>
+    <keyword> void </keyword>
+    <identifier type="void" beingDefined="True" kind="STATIC" category="subroutine" index="3"> fill </identifier>
+    <symbol> ( </symbol>
+    <parameterList>
+      <identifier type="" beingDefined="False" kind="NONE" category="" index="0"> Array </identifier>
+      <identifier type="Array" beingDefined="True" kind="ARG" category="arg" index="0"> a </identifier>
+      <symbol> , </symbol>
+      <keyword> int </keyword>
+      <identifier type="int" beingDefined="True" kind="ARG" category="arg" index="1"> size </identifier>
+    </parameterList>
+    <symbol> ) </symbol>
+    <subroutineBody>
+      <symbol> { </symbol>
+      <statements>
+        <whileStatement>
+          <keyword> while </keyword>
+          <symbol> ( </symbol>
+          <expression>
+            <term>
+              <identifier type="int" beingDefined="False" kind="ARG" category="arg" index="1"> size </identifier>
+            </term>
+            <symbol> &gt; </symbol>
+            <term>
+              <integerConstant> 0 </integerConstant>
+            </term>
+          </expression>
+          <symbol> ) </symbol>
+          <symbol> { </symbol>
+          <statements>
+            <letStatement>
+              <keyword> let </keyword>
+              <identifier type="int" beingDefined="False" kind="ARG" category="arg" index="1"> size </identifier>
+              <symbol> = </symbol>
+              <expression>
+                <term>
+                  <identifier type="int" beingDefined="False" kind="ARG" category="arg" index="1"> size </identifier>
+                </term>
+                <symbol> - </symbol>
+                <term>
+                  <integerConstant> 1 </integerConstant>
+                </term>
+              </expression>
+              <symbol> ; </symbol>
+            </letStatement>
+            <letStatement>
+              <keyword> let </keyword>
+              <identifier type="Array" beingDefined="False" kind="ARG" category="arg" index="0"> a </identifier>
+              <symbol> [ </symbol>
+              <expression>
+                <term>
+                  <identifier type="int" beingDefined="False" kind="ARG" category="arg" index="1"> size </identifier>
+                </term>
+              </expression>
+              <symbol> ] </symbol>
+              <symbol> = </symbol>
+              <expression>
+                <term>
+                  <identifier type="" beingDefined="False" kind="NONE" category="" index="0"> Array </identifier>
+                  <symbol> . </symbol>
+                  <identifier type="" beingDefined="False" kind="NONE" category="" index="0"> new </identifier>
+                  <symbol> ( </symbol>
+                  <expressionList>
+                    <expression>
+                      <term>
+                        <integerConstant> 3 </integerConstant>
+                      </term>
+                    </expression>
+                  </expressionList>
+                  <symbol> ) </symbol>
+                </term>
+              </expression>
+              <symbol> ; </symbol>
+            </letStatement>
+          </statements>
+          <symbol> } </symbol>
+        </whileStatement>
+        <returnStatement>
+          <keyword> return </keyword>
+          <symbol> ; </symbol>
+        </returnStatement>
+      </statements>
+      <symbol> } </symbol>
+    </subroutineBody>
+  </subroutineDec>
+  <symbol> } </symbol>
+</class>

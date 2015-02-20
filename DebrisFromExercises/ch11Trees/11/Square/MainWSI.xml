@@ -1,0 +1,70 @@
+<class>
+  <keyword> class </keyword>
+  <identifier type="Main" beingDefined="True" kind="STATIC" category="class" index="0"> Main </identifier>
+  <symbol> { </symbol>
+  <subroutineDec>
+    <keyword> function </keyword>
+    <keyword> void </keyword>
+    <identifier type="void" beingDefined="True" kind="STATIC" category="subroutine" index="1"> main </identifier>
+    <symbol> ( </symbol>
+    <parameterList>
+    </parameterList>
+    <symbol> ) </symbol>
+    <subroutineBody>
+      <symbol> { </symbol>
+      <varDec>
+        <keyword> var </keyword>
+        <identifier type="" beingDefined="False" kind="NONE" category="" index="0"> SquareGame </identifier>
+        <identifier type="SquareGame" beingDefined="True" kind="VAR" category="variable" index="0"> game </identifier>
+        <symbol> ; </symbol>
+      </varDec>
+      <statements>
+        <letStatement>
+          <keyword> let </keyword>
+          <identifier type="SquareGame" beingDefined="False" kind="VAR" category="variable" index="0"> game </identifier>
+          <symbol> = </symbol>
+          <expression>
+            <term>
+              <identifier type="" beingDefined="False" kind="NONE" category="" index="0"> SquareGame </identifier>
+              <symbol> . </symbol>
+              <identifier type="" beingDefined="False" kind="NONE" category="" index="0"> new </identifier>
+              <symbol> ( </symbol>
+              <expressionList>
+              </expressionList>
+              <symbol> ) </symbol>
+            </term>
+          </expression>
+          <symbol> ; </symbol>
+        </letStatement>
+        <doStatement>
+          <keyword> do </keyword>
+          <identifier type="SquareGame" beingDefined="False" kind="VAR" category="variable" index="0"> game </identifier>
+          <symbol> . </symbol>
+          <identifier type="" beingDefined="False" kind="NONE" category="" index="0"> run </identifier>
+          <symbol> ( </symbol>
+          <expressionList>
+          </expressionList>
+          <symbol> ) </symbol>
+          <symbol> ; </symbol>
+        </doStatement>
+        <doStatement>
+          <keyword> do </keyword>
+          <identifier type="SquareGame" beingDefined="False" kind="VAR" category="variable" index="0"> game </identifier>
+          <symbol> . </symbol>
+          <identifier type="" beingDefined="False" kind="NONE" category="" index="0"> dispose </identifier>
+          <symbol> ( </symbol>
+          <expressionList>
+          </expressionList>
+          <symbol> ) </symbol>
+          <symbol> ; </symbol>
+        </doStatement>
+        <returnStatement>
+          <keyword> return </keyword>
+          <symbol> ; </symbol>
+        </returnStatement>
+      </statements>
+      <symbol> } </symbol>
+    </subroutineBody>
+  </subroutineDec>
+  <symbol> } </symbol>
+</class>

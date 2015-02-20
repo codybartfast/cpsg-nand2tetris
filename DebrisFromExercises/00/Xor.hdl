@@ -1,0 +1,24 @@
+// This file is part of www.nand2tetris.org
+// and the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// File name: projects/00/Xor.hdl
+
+// This file is included here for those who wish to follow the Hardware Simulator Tutorial
+// and play with the Xor.hdl implementation. 
+
+/**
+ *  Exclusive-or gate: out = !(a == b).
+ */
+
+CHIP Xor {
+
+    IN a, b;
+    OUT out;
+
+    PARTS:
+    Nand(a=a, b=b, out=nand);
+    Nand(a=a, b=nand, out=nandA);
+    Nand(a=nand, b=b, out=nandB);
+    Nand(a=nandA, b=nandB, out=out);
+    
+}

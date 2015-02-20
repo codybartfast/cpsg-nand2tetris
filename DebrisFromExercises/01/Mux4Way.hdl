@@ -1,0 +1,26 @@
+// This file is part of www.nand2tetris.org
+// and the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// File name: projects/01/Mux4Way16.hdl
+
+
+CHIP Mux4Way {
+    IN a, b, c, d, sel[2];
+    OUT out;
+
+    PARTS:
+    Not(in=sel[0], out=notSel0);
+    Not(in=sel[1], out=notSel1);
+    
+    And(a=notSel0, b=notSel1, out=selA);
+    And(a=sel[0], b=notSel1, out=selB);
+    And(a=notSel0, b=sel[1], out=selC);
+    And(a=sel[0], b=sel[1], out=selD);
+    
+    And(a=a, b=selA, out=valA);
+    And(a=b, b=selB, out=valB);
+    And(a=c, b=selC, out=valC);
+    And(a=d, b=selD, out=valD);
+    
+    
+}

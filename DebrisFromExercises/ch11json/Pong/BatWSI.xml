@@ -1,0 +1,863 @@
+<class>
+  <keyword> class </keyword>
+  <identifier kind="NONE" type="Bat" index="0"> Bat </identifier>
+  <symbol> { </symbol>
+  <classVarDec>
+    <keyword> field </keyword>
+    <keyword> int </keyword>
+    <identifier kind="FIELD" type="int" index="0"> x </identifier>
+    <symbol> , </symbol>
+    <identifier kind="FIELD" type="int" index="1"> y </identifier>
+    <symbol> ; </symbol>
+  </classVarDec>
+  <classVarDec>
+    <keyword> field </keyword>
+    <keyword> int </keyword>
+    <identifier kind="FIELD" type="int" index="2"> width </identifier>
+    <symbol> , </symbol>
+    <identifier kind="FIELD" type="int" index="3"> height </identifier>
+    <symbol> ; </symbol>
+  </classVarDec>
+  <classVarDec>
+    <keyword> field </keyword>
+    <keyword> int </keyword>
+    <identifier kind="FIELD" type="int" index="4"> direction </identifier>
+    <symbol> ; </symbol>
+  </classVarDec>
+  <subroutineDec VarCount=0 FieldCount=5>
+    <keyword> constructor </keyword>
+    <identifier kind="NONE" type="" index="0"> Bat </identifier>
+    <identifier kind="NONE" type="Bat" index="0"> new </identifier>
+    <symbol> ( </symbol>
+    <parameterList>
+      <keyword> int </keyword>
+      <identifier kind="ARG" type="int" index="0"> Ax </identifier>
+      <symbol> , </symbol>
+      <keyword> int </keyword>
+      <identifier kind="ARG" type="int" index="1"> Ay </identifier>
+      <symbol> , </symbol>
+      <keyword> int </keyword>
+      <identifier kind="ARG" type="int" index="2"> Awidth </identifier>
+      <symbol> , </symbol>
+      <keyword> int </keyword>
+      <identifier kind="ARG" type="int" index="3"> Aheight </identifier>
+    </parameterList>
+    <symbol> ) </symbol>
+    <subroutineBody>
+      <symbol> { </symbol>
+      <statements>
+        <letStatement>
+          <keyword> let </keyword>
+          <identifier kind="FIELD" type="int" index="0"> x </identifier>
+          <symbol> = </symbol>
+          <expression>
+            <term>
+              <identifier kind="ARG" type="int" index="0"> Ax </identifier>
+            </term>
+          </expression>
+          <symbol> ; </symbol>
+        </letStatement>
+        <letStatement>
+          <keyword> let </keyword>
+          <identifier kind="FIELD" type="int" index="1"> y </identifier>
+          <symbol> = </symbol>
+          <expression>
+            <term>
+              <identifier kind="ARG" type="int" index="1"> Ay </identifier>
+            </term>
+          </expression>
+          <symbol> ; </symbol>
+        </letStatement>
+        <letStatement>
+          <keyword> let </keyword>
+          <identifier kind="FIELD" type="int" index="2"> width </identifier>
+          <symbol> = </symbol>
+          <expression>
+            <term>
+              <identifier kind="ARG" type="int" index="2"> Awidth </identifier>
+            </term>
+          </expression>
+          <symbol> ; </symbol>
+        </letStatement>
+        <letStatement>
+          <keyword> let </keyword>
+          <identifier kind="FIELD" type="int" index="3"> height </identifier>
+          <symbol> = </symbol>
+          <expression>
+            <term>
+              <identifier kind="ARG" type="int" index="3"> Aheight </identifier>
+            </term>
+          </expression>
+          <symbol> ; </symbol>
+        </letStatement>
+        <letStatement>
+          <keyword> let </keyword>
+          <identifier kind="FIELD" type="int" index="4"> direction </identifier>
+          <symbol> = </symbol>
+          <expression>
+            <term>
+              <integerConstant> 2 </integerConstant>
+            </term>
+          </expression>
+          <symbol> ; </symbol>
+        </letStatement>
+        <doStatement>
+          <keyword> do </keyword>
+          <identifier kind="NONE" type="" index="0"> show </identifier>
+          <symbol> ( </symbol>
+          <expressionList>
+          </expressionList>
+          <symbol> ) </symbol>
+          <symbol> ; </symbol>
+        </doStatement>
+        <returnStatement>
+          <keyword> return </keyword>
+          <expression>
+            <term>
+              <keyword> this </keyword>
+            </term>
+          </expression>
+          <symbol> ; </symbol>
+        </returnStatement>
+      </statements>
+      <symbol> } </symbol>
+    </subroutineBody>
+  </subroutineDec>
+  <subroutineDec VarCount=0>
+    <keyword> method </keyword>
+    <keyword> void </keyword>
+    <identifier kind="NONE" type="void" index="0"> dispose </identifier>
+    <symbol> ( </symbol>
+    <parameterList>
+    </parameterList>
+    <symbol> ) </symbol>
+    <subroutineBody>
+      <symbol> { </symbol>
+      <statements>
+        <doStatement>
+          <keyword> do </keyword>
+          <identifier kind="NONE" type="" index="0"> Memory </identifier>
+          <symbol> . </symbol>
+          <identifier kind="NONE" type="" index="0"> deAlloc </identifier>
+          <symbol> ( </symbol>
+          <expressionList>
+            <expression>
+              <term>
+                <keyword> this </keyword>
+              </term>
+            </expression>
+          </expressionList>
+          <symbol> ) </symbol>
+          <symbol> ; </symbol>
+        </doStatement>
+        <returnStatement>
+          <keyword> return </keyword>
+          <symbol> ; </symbol>
+        </returnStatement>
+      </statements>
+      <symbol> } </symbol>
+    </subroutineBody>
+  </subroutineDec>
+  <subroutineDec VarCount=0>
+    <keyword> method </keyword>
+    <keyword> void </keyword>
+    <identifier kind="NONE" type="void" index="0"> show </identifier>
+    <symbol> ( </symbol>
+    <parameterList>
+    </parameterList>
+    <symbol> ) </symbol>
+    <subroutineBody>
+      <symbol> { </symbol>
+      <statements>
+        <doStatement>
+          <keyword> do </keyword>
+          <identifier kind="NONE" type="" index="0"> Screen </identifier>
+          <symbol> . </symbol>
+          <identifier kind="NONE" type="" index="0"> setColor </identifier>
+          <symbol> ( </symbol>
+          <expressionList>
+            <expression>
+              <term>
+                <keyword> true </keyword>
+              </term>
+            </expression>
+          </expressionList>
+          <symbol> ) </symbol>
+          <symbol> ; </symbol>
+        </doStatement>
+        <doStatement>
+          <keyword> do </keyword>
+          <identifier kind="NONE" type="" index="0"> draw </identifier>
+          <symbol> ( </symbol>
+          <expressionList>
+          </expressionList>
+          <symbol> ) </symbol>
+          <symbol> ; </symbol>
+        </doStatement>
+        <returnStatement>
+          <keyword> return </keyword>
+          <symbol> ; </symbol>
+        </returnStatement>
+      </statements>
+      <symbol> } </symbol>
+    </subroutineBody>
+  </subroutineDec>
+  <subroutineDec VarCount=0>
+    <keyword> method </keyword>
+    <keyword> void </keyword>
+    <identifier kind="NONE" type="void" index="0"> hide </identifier>
+    <symbol> ( </symbol>
+    <parameterList>
+    </parameterList>
+    <symbol> ) </symbol>
+    <subroutineBody>
+      <symbol> { </symbol>
+      <statements>
+        <doStatement>
+          <keyword> do </keyword>
+          <identifier kind="NONE" type="" index="0"> Screen </identifier>
+          <symbol> . </symbol>
+          <identifier kind="NONE" type="" index="0"> setColor </identifier>
+          <symbol> ( </symbol>
+          <expressionList>
+            <expression>
+              <term>
+                <keyword> false </keyword>
+              </term>
+            </expression>
+          </expressionList>
+          <symbol> ) </symbol>
+          <symbol> ; </symbol>
+        </doStatement>
+        <doStatement>
+          <keyword> do </keyword>
+          <identifier kind="NONE" type="" index="0"> draw </identifier>
+          <symbol> ( </symbol>
+          <expressionList>
+          </expressionList>
+          <symbol> ) </symbol>
+          <symbol> ; </symbol>
+        </doStatement>
+        <returnStatement>
+          <keyword> return </keyword>
+          <symbol> ; </symbol>
+        </returnStatement>
+      </statements>
+      <symbol> } </symbol>
+    </subroutineBody>
+  </subroutineDec>
+  <subroutineDec VarCount=0>
+    <keyword> method </keyword>
+    <keyword> void </keyword>
+    <identifier kind="NONE" type="void" index="0"> draw </identifier>
+    <symbol> ( </symbol>
+    <parameterList>
+    </parameterList>
+    <symbol> ) </symbol>
+    <subroutineBody>
+      <symbol> { </symbol>
+      <statements>
+        <doStatement>
+          <keyword> do </keyword>
+          <identifier kind="NONE" type="" index="0"> Screen </identifier>
+          <symbol> . </symbol>
+          <identifier kind="NONE" type="" index="0"> drawRectangle </identifier>
+          <symbol> ( </symbol>
+          <expressionList>
+            <expression>
+              <term>
+                <identifier kind="FIELD" type="int" index="0"> x </identifier>
+              </term>
+            </expression>
+            <symbol> , </symbol>
+            <expression>
+              <term>
+                <identifier kind="FIELD" type="int" index="1"> y </identifier>
+              </term>
+            </expression>
+            <symbol> , </symbol>
+            <expression>
+              <term>
+                <identifier kind="FIELD" type="int" index="0"> x </identifier>
+              </term>
+              <symbol> + </symbol>
+              <term>
+                <identifier kind="FIELD" type="int" index="2"> width </identifier>
+              </term>
+            </expression>
+            <symbol> , </symbol>
+            <expression>
+              <term>
+                <identifier kind="FIELD" type="int" index="1"> y </identifier>
+              </term>
+              <symbol> + </symbol>
+              <term>
+                <identifier kind="FIELD" type="int" index="3"> height </identifier>
+              </term>
+            </expression>
+          </expressionList>
+          <symbol> ) </symbol>
+          <symbol> ; </symbol>
+        </doStatement>
+        <returnStatement>
+          <keyword> return </keyword>
+          <symbol> ; </symbol>
+        </returnStatement>
+      </statements>
+      <symbol> } </symbol>
+    </subroutineBody>
+  </subroutineDec>
+  <subroutineDec VarCount=0>
+    <keyword> method </keyword>
+    <keyword> void </keyword>
+    <identifier kind="NONE" type="void" index="0"> setDirection </identifier>
+    <symbol> ( </symbol>
+    <parameterList>
+      <keyword> int </keyword>
+      <identifier kind="ARG" type="int" index="1"> Adirection </identifier>
+    </parameterList>
+    <symbol> ) </symbol>
+    <subroutineBody>
+      <symbol> { </symbol>
+      <statements>
+        <letStatement>
+          <keyword> let </keyword>
+          <identifier kind="FIELD" type="int" index="4"> direction </identifier>
+          <symbol> = </symbol>
+          <expression>
+            <term>
+              <identifier kind="ARG" type="int" index="1"> Adirection </identifier>
+            </term>
+          </expression>
+          <symbol> ; </symbol>
+        </letStatement>
+        <returnStatement>
+          <keyword> return </keyword>
+          <symbol> ; </symbol>
+        </returnStatement>
+      </statements>
+      <symbol> } </symbol>
+    </subroutineBody>
+  </subroutineDec>
+  <subroutineDec VarCount=0>
+    <keyword> method </keyword>
+    <keyword> int </keyword>
+    <identifier kind="NONE" type="int" index="0"> getLeft </identifier>
+    <symbol> ( </symbol>
+    <parameterList>
+    </parameterList>
+    <symbol> ) </symbol>
+    <subroutineBody>
+      <symbol> { </symbol>
+      <statements>
+        <returnStatement>
+          <keyword> return </keyword>
+          <expression>
+            <term>
+              <identifier kind="FIELD" type="int" index="0"> x </identifier>
+            </term>
+          </expression>
+          <symbol> ; </symbol>
+        </returnStatement>
+      </statements>
+      <symbol> } </symbol>
+    </subroutineBody>
+  </subroutineDec>
+  <subroutineDec VarCount=0>
+    <keyword> method </keyword>
+    <keyword> int </keyword>
+    <identifier kind="NONE" type="int" index="0"> getRight </identifier>
+    <symbol> ( </symbol>
+    <parameterList>
+    </parameterList>
+    <symbol> ) </symbol>
+    <subroutineBody>
+      <symbol> { </symbol>
+      <statements>
+        <returnStatement>
+          <keyword> return </keyword>
+          <expression>
+            <term>
+              <identifier kind="FIELD" type="int" index="0"> x </identifier>
+            </term>
+            <symbol> + </symbol>
+            <term>
+              <identifier kind="FIELD" type="int" index="2"> width </identifier>
+            </term>
+          </expression>
+          <symbol> ; </symbol>
+        </returnStatement>
+      </statements>
+      <symbol> } </symbol>
+    </subroutineBody>
+  </subroutineDec>
+  <subroutineDec VarCount=0>
+    <keyword> method </keyword>
+    <keyword> void </keyword>
+    <identifier kind="NONE" type="void" index="0"> setWidth </identifier>
+    <symbol> ( </symbol>
+    <parameterList>
+      <keyword> int </keyword>
+      <identifier kind="ARG" type="int" index="1"> Awidth </identifier>
+    </parameterList>
+    <symbol> ) </symbol>
+    <subroutineBody>
+      <symbol> { </symbol>
+      <statements>
+        <doStatement>
+          <keyword> do </keyword>
+          <identifier kind="NONE" type="" index="0"> hide </identifier>
+          <symbol> ( </symbol>
+          <expressionList>
+          </expressionList>
+          <symbol> ) </symbol>
+          <symbol> ; </symbol>
+        </doStatement>
+        <letStatement>
+          <keyword> let </keyword>
+          <identifier kind="FIELD" type="int" index="2"> width </identifier>
+          <symbol> = </symbol>
+          <expression>
+            <term>
+              <identifier kind="ARG" type="int" index="1"> Awidth </identifier>
+            </term>
+          </expression>
+          <symbol> ; </symbol>
+        </letStatement>
+        <doStatement>
+          <keyword> do </keyword>
+          <identifier kind="NONE" type="" index="0"> show </identifier>
+          <symbol> ( </symbol>
+          <expressionList>
+          </expressionList>
+          <symbol> ) </symbol>
+          <symbol> ; </symbol>
+        </doStatement>
+        <returnStatement>
+          <keyword> return </keyword>
+          <symbol> ; </symbol>
+        </returnStatement>
+      </statements>
+      <symbol> } </symbol>
+    </subroutineBody>
+  </subroutineDec>
+  <subroutineDec VarCount=0>
+    <keyword> method </keyword>
+    <keyword> void </keyword>
+    <identifier kind="NONE" type="void" index="0"> move </identifier>
+    <symbol> ( </symbol>
+    <parameterList>
+    </parameterList>
+    <symbol> ) </symbol>
+    <subroutineBody>
+      <symbol> { </symbol>
+      <statements>
+        <ifStatement>
+          <keyword> if </keyword>
+          <symbol> ( </symbol>
+          <expression>
+            <term>
+              <identifier kind="FIELD" type="int" index="4"> direction </identifier>
+            </term>
+            <symbol> = </symbol>
+            <term>
+              <integerConstant> 1 </integerConstant>
+            </term>
+          </expression>
+          <symbol> ) </symbol>
+          <symbol> { </symbol>
+          <statements>
+            <letStatement>
+              <keyword> let </keyword>
+              <identifier kind="FIELD" type="int" index="0"> x </identifier>
+              <symbol> = </symbol>
+              <expression>
+                <term>
+                  <identifier kind="FIELD" type="int" index="0"> x </identifier>
+                </term>
+                <symbol> - </symbol>
+                <term>
+                  <integerConstant> 4 </integerConstant>
+                </term>
+              </expression>
+              <symbol> ; </symbol>
+            </letStatement>
+            <ifStatement>
+              <keyword> if </keyword>
+              <symbol> ( </symbol>
+              <expression>
+                <term>
+                  <identifier kind="FIELD" type="int" index="0"> x </identifier>
+                </term>
+                <symbol> &lt; </symbol>
+                <term>
+                  <integerConstant> 0 </integerConstant>
+                </term>
+              </expression>
+              <symbol> ) </symbol>
+              <symbol> { </symbol>
+              <statements>
+                <letStatement>
+                  <keyword> let </keyword>
+                  <identifier kind="FIELD" type="int" index="0"> x </identifier>
+                  <symbol> = </symbol>
+                  <expression>
+                    <term>
+                      <integerConstant> 0 </integerConstant>
+                    </term>
+                  </expression>
+                  <symbol> ; </symbol>
+                </letStatement>
+              </statements>
+              <symbol> } </symbol>
+            </ifStatement>
+            <doStatement>
+              <keyword> do </keyword>
+              <identifier kind="NONE" type="" index="0"> Screen </identifier>
+              <symbol> . </symbol>
+              <identifier kind="NONE" type="" index="0"> setColor </identifier>
+              <symbol> ( </symbol>
+              <expressionList>
+                <expression>
+                  <term>
+                    <keyword> false </keyword>
+                  </term>
+                </expression>
+              </expressionList>
+              <symbol> ) </symbol>
+              <symbol> ; </symbol>
+            </doStatement>
+            <doStatement>
+              <keyword> do </keyword>
+              <identifier kind="NONE" type="" index="0"> Screen </identifier>
+              <symbol> . </symbol>
+              <identifier kind="NONE" type="" index="0"> drawRectangle </identifier>
+              <symbol> ( </symbol>
+              <expressionList>
+                <expression>
+                  <term>
+                    <symbol> ( </symbol>
+                    <expression>
+                      <term>
+                        <identifier kind="FIELD" type="int" index="0"> x </identifier>
+                      </term>
+                      <symbol> + </symbol>
+                      <term>
+                        <identifier kind="FIELD" type="int" index="2"> width </identifier>
+                      </term>
+                    </expression>
+                    <symbol> ) </symbol>
+                  </term>
+                  <symbol> + </symbol>
+                  <term>
+                    <integerConstant> 1 </integerConstant>
+                  </term>
+                </expression>
+                <symbol> , </symbol>
+                <expression>
+                  <term>
+                    <identifier kind="FIELD" type="int" index="1"> y </identifier>
+                  </term>
+                </expression>
+                <symbol> , </symbol>
+                <expression>
+                  <term>
+                    <symbol> ( </symbol>
+                    <expression>
+                      <term>
+                        <identifier kind="FIELD" type="int" index="0"> x </identifier>
+                      </term>
+                      <symbol> + </symbol>
+                      <term>
+                        <identifier kind="FIELD" type="int" index="2"> width </identifier>
+                      </term>
+                    </expression>
+                    <symbol> ) </symbol>
+                  </term>
+                  <symbol> + </symbol>
+                  <term>
+                    <integerConstant> 4 </integerConstant>
+                  </term>
+                </expression>
+                <symbol> , </symbol>
+                <expression>
+                  <term>
+                    <identifier kind="FIELD" type="int" index="1"> y </identifier>
+                  </term>
+                  <symbol> + </symbol>
+                  <term>
+                    <identifier kind="FIELD" type="int" index="3"> height </identifier>
+                  </term>
+                </expression>
+              </expressionList>
+              <symbol> ) </symbol>
+              <symbol> ; </symbol>
+            </doStatement>
+            <doStatement>
+              <keyword> do </keyword>
+              <identifier kind="NONE" type="" index="0"> Screen </identifier>
+              <symbol> . </symbol>
+              <identifier kind="NONE" type="" index="0"> setColor </identifier>
+              <symbol> ( </symbol>
+              <expressionList>
+                <expression>
+                  <term>
+                    <keyword> true </keyword>
+                  </term>
+                </expression>
+              </expressionList>
+              <symbol> ) </symbol>
+              <symbol> ; </symbol>
+            </doStatement>
+            <doStatement>
+              <keyword> do </keyword>
+              <identifier kind="NONE" type="" index="0"> Screen </identifier>
+              <symbol> . </symbol>
+              <identifier kind="NONE" type="" index="0"> drawRectangle </identifier>
+              <symbol> ( </symbol>
+              <expressionList>
+                <expression>
+                  <term>
+                    <identifier kind="FIELD" type="int" index="0"> x </identifier>
+                  </term>
+                </expression>
+                <symbol> , </symbol>
+                <expression>
+                  <term>
+                    <identifier kind="FIELD" type="int" index="1"> y </identifier>
+                  </term>
+                </expression>
+                <symbol> , </symbol>
+                <expression>
+                  <term>
+                    <identifier kind="FIELD" type="int" index="0"> x </identifier>
+                  </term>
+                  <symbol> + </symbol>
+                  <term>
+                    <integerConstant> 3 </integerConstant>
+                  </term>
+                </expression>
+                <symbol> , </symbol>
+                <expression>
+                  <term>
+                    <identifier kind="FIELD" type="int" index="1"> y </identifier>
+                  </term>
+                  <symbol> + </symbol>
+                  <term>
+                    <identifier kind="FIELD" type="int" index="3"> height </identifier>
+                  </term>
+                </expression>
+              </expressionList>
+              <symbol> ) </symbol>
+              <symbol> ; </symbol>
+            </doStatement>
+          </statements>
+          <symbol> } </symbol>
+          <keyword> else </keyword>
+          <symbol> { </symbol>
+          <statements>
+            <letStatement>
+              <keyword> let </keyword>
+              <identifier kind="FIELD" type="int" index="0"> x </identifier>
+              <symbol> = </symbol>
+              <expression>
+                <term>
+                  <identifier kind="FIELD" type="int" index="0"> x </identifier>
+                </term>
+                <symbol> + </symbol>
+                <term>
+                  <integerConstant> 4 </integerConstant>
+                </term>
+              </expression>
+              <symbol> ; </symbol>
+            </letStatement>
+            <ifStatement>
+              <keyword> if </keyword>
+              <symbol> ( </symbol>
+              <expression>
+                <term>
+                  <symbol> ( </symbol>
+                  <expression>
+                    <term>
+                      <identifier kind="FIELD" type="int" index="0"> x </identifier>
+                    </term>
+                    <symbol> + </symbol>
+                    <term>
+                      <identifier kind="FIELD" type="int" index="2"> width </identifier>
+                    </term>
+                  </expression>
+                  <symbol> ) </symbol>
+                </term>
+                <symbol> &gt; </symbol>
+                <term>
+                  <integerConstant> 511 </integerConstant>
+                </term>
+              </expression>
+              <symbol> ) </symbol>
+              <symbol> { </symbol>
+              <statements>
+                <letStatement>
+                  <keyword> let </keyword>
+                  <identifier kind="FIELD" type="int" index="0"> x </identifier>
+                  <symbol> = </symbol>
+                  <expression>
+                    <term>
+                      <integerConstant> 511 </integerConstant>
+                    </term>
+                    <symbol> - </symbol>
+                    <term>
+                      <identifier kind="FIELD" type="int" index="2"> width </identifier>
+                    </term>
+                  </expression>
+                  <symbol> ; </symbol>
+                </letStatement>
+              </statements>
+              <symbol> } </symbol>
+            </ifStatement>
+            <doStatement>
+              <keyword> do </keyword>
+              <identifier kind="NONE" type="" index="0"> Screen </identifier>
+              <symbol> . </symbol>
+              <identifier kind="NONE" type="" index="0"> setColor </identifier>
+              <symbol> ( </symbol>
+              <expressionList>
+                <expression>
+                  <term>
+                    <keyword> false </keyword>
+                  </term>
+                </expression>
+              </expressionList>
+              <symbol> ) </symbol>
+              <symbol> ; </symbol>
+            </doStatement>
+            <doStatement>
+              <keyword> do </keyword>
+              <identifier kind="NONE" type="" index="0"> Screen </identifier>
+              <symbol> . </symbol>
+              <identifier kind="NONE" type="" index="0"> drawRectangle </identifier>
+              <symbol> ( </symbol>
+              <expressionList>
+                <expression>
+                  <term>
+                    <identifier kind="FIELD" type="int" index="0"> x </identifier>
+                  </term>
+                  <symbol> - </symbol>
+                  <term>
+                    <integerConstant> 4 </integerConstant>
+                  </term>
+                </expression>
+                <symbol> , </symbol>
+                <expression>
+                  <term>
+                    <identifier kind="FIELD" type="int" index="1"> y </identifier>
+                  </term>
+                </expression>
+                <symbol> , </symbol>
+                <expression>
+                  <term>
+                    <identifier kind="FIELD" type="int" index="0"> x </identifier>
+                  </term>
+                  <symbol> - </symbol>
+                  <term>
+                    <integerConstant> 1 </integerConstant>
+                  </term>
+                </expression>
+                <symbol> , </symbol>
+                <expression>
+                  <term>
+                    <identifier kind="FIELD" type="int" index="1"> y </identifier>
+                  </term>
+                  <symbol> + </symbol>
+                  <term>
+                    <identifier kind="FIELD" type="int" index="3"> height </identifier>
+                  </term>
+                </expression>
+              </expressionList>
+              <symbol> ) </symbol>
+              <symbol> ; </symbol>
+            </doStatement>
+            <doStatement>
+              <keyword> do </keyword>
+              <identifier kind="NONE" type="" index="0"> Screen </identifier>
+              <symbol> . </symbol>
+              <identifier kind="NONE" type="" index="0"> setColor </identifier>
+              <symbol> ( </symbol>
+              <expressionList>
+                <expression>
+                  <term>
+                    <keyword> true </keyword>
+                  </term>
+                </expression>
+              </expressionList>
+              <symbol> ) </symbol>
+              <symbol> ; </symbol>
+            </doStatement>
+            <doStatement>
+              <keyword> do </keyword>
+              <identifier kind="NONE" type="" index="0"> Screen </identifier>
+              <symbol> . </symbol>
+              <identifier kind="NONE" type="" index="0"> drawRectangle </identifier>
+              <symbol> ( </symbol>
+              <expressionList>
+                <expression>
+                  <term>
+                    <symbol> ( </symbol>
+                    <expression>
+                      <term>
+                        <identifier kind="FIELD" type="int" index="0"> x </identifier>
+                      </term>
+                      <symbol> + </symbol>
+                      <term>
+                        <identifier kind="FIELD" type="int" index="2"> width </identifier>
+                      </term>
+                    </expression>
+                    <symbol> ) </symbol>
+                  </term>
+                  <symbol> - </symbol>
+                  <term>
+                    <integerConstant> 3 </integerConstant>
+                  </term>
+                </expression>
+                <symbol> , </symbol>
+                <expression>
+                  <term>
+                    <identifier kind="FIELD" type="int" index="1"> y </identifier>
+                  </term>
+                </expression>
+                <symbol> , </symbol>
+                <expression>
+                  <term>
+                    <identifier kind="FIELD" type="int" index="0"> x </identifier>
+                  </term>
+                  <symbol> + </symbol>
+                  <term>
+                    <identifier kind="FIELD" type="int" index="2"> width </identifier>
+                  </term>
+                </expression>
+                <symbol> , </symbol>
+                <expression>
+                  <term>
+                    <identifier kind="FIELD" type="int" index="1"> y </identifier>
+                  </term>
+                  <symbol> + </symbol>
+                  <term>
+                    <identifier kind="FIELD" type="int" index="3"> height </identifier>
+                  </term>
+                </expression>
+              </expressionList>
+              <symbol> ) </symbol>
+              <symbol> ; </symbol>
+            </doStatement>
+          </statements>
+          <symbol> } </symbol>
+        </ifStatement>
+        <returnStatement>
+          <keyword> return </keyword>
+          <symbol> ; </symbol>
+        </returnStatement>
+      </statements>
+      <symbol> } </symbol>
+    </subroutineBody>
+  </subroutineDec>
+  <symbol> } </symbol>
+</class>

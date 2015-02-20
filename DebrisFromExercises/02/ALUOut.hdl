@@ -1,0 +1,20 @@
+  
+CHIP ALUOut {
+    IN  
+        in[16];
+
+    OUT 
+        out[16], // 16-bit output
+        zr, // 1 if (out==0), 0 otherwise
+        ng; // 1 if (out<0),  0 otherwise
+
+    PARTS:
+				Or8Way(in=in[0..7], out=or1);
+				Or8Way(in=in[8..15], out=or2);
+				Or(a=or1, b=or2, out=or);
+				
+				Not(in=or, out=zr);
+				And(a=in[15], b=true, out=ng);
+				And16(a=in, b=in, out=out);	
+		
+}

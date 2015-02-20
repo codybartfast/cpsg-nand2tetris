@@ -1,0 +1,269 @@
+// This file is part of www.nand2tetris.org
+// and the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// File name: projects/09/Square/SquareGame.jack
+
+/**
+ * 
+ */
+class MatchGame {
+
+    field int startCount, remainingCount;
+    
+    field int currentPlayer;
+    field string currentPlayerName;
+    
+    field Array matchSticks;
+
+    /** Constructs a new Square Game. */
+    constructor MatchGame new() {
+				var int iStickCount;
+				let iStickCount = 0;
+        let startCount = 20;
+				let matchSticks = Array.new(startCount);
+
+				while(iStickCount < startCount)
+				{
+					let matchSticks[iStickCount] = true;
+					let iStickCount = iStickCount + 1;
+				}
+
+
+        return this;
+    }
+
+    /** Deallocates the object's memory. */
+    method void dispose() {
+        do Memory.deAlloc(this);
+        return;
+    }    
+    
+		method void run(){
+			
+			do displayWelcome();
+			
+			do playRound();
+			
+			return;
+		}
+
+		method void playRound(){
+			let remainingCount = startCount;
+
+			let currentPlayer = 1;
+			do setCurrentPlayerName();
+			
+			while(remainingCount > 0){
+			
+				do Screen.clearScreen();
+				do Output.moveCursor(0, 0);
+			
+				do playTurn();
+
+				do Output.println();
+				do Output.printString("Press any key to end turn.");
+				do Output.println();
+				do Keyboard.readChar();
+
+				
+				let currentPlayer = 1 - currentPlayer;
+				do setCurrentPlayerName();
+			}
+			
+			do displayResult();
+						
+			return;
+		}
+				
+		method void playTurn(){
+			var int pick;
+			
+			do Output.printString("There are ");
+			do Output.printInt(remainingCount);
+			do Output.printString(" matches remaining.");			
+			do Output.println();
+			
+			if(currentPlayer = 0){
+				let pick = getComputerPick();
+			}
+			else{
+				let pick = getPlayerPick();
+			}
+			
+			let remainingCount = remainingCount - pick;
+
+			do Output.println();
+			do Output.printString(currentPlayerName);			
+			do Output.printString(" picked ");			
+			do Output.printInt(pick);			
+			do Output.printString(" matches, which leaves ");			
+			do Output.printInt(remainingCount);			
+			do Output.printString(" remaining.");			
+			do Output.println();								
+			
+			do modifyStickDisplay(pick);
+			
+			do drawSticks();
+			
+			return;
+		}
+		
+		method void modifyStickDisplay(int pick){
+			
+			var int iRemaining;
+			var int iIndex;
+			var int ourCount;
+			var int rand;
+			var int matchIndex;
+			
+			let iIndex = remainingCount;
+			let ourCount = remainingCount + pick;
+			
+			do Output.printInt(ourCount);
+			do Output.printString(" - ");
+			do Output.printInt(GetRandom(ourCount));
+			do Output.println();
+			
+			
+			let iRemaining = pick;
+			while(iRemaining > 0)
+			{
+				let rand = GetRandom(ourCount);
+				let matchIndex = 0;
+				
+				do Output.printInt(rand);
+				do Output.println();
+
+				while(matchIndex < startCount){
+					if(matchSticks[matchIndex]){
+						if(rand = 0){
+							let matchSticks[matchIndex] = false;
+							let matchIndex = startCount;
+						}
+						else{
+							let rand = rand - 1;
+						}
+					}
+					let matchIndex = matchIndex + 1;
+				}
+			
+			
+				//let matchSticks[iIndex] = false;
+				let ourCount = ourCount - 1;
+				let iRemaining = iRemaining - 1;
+				//let iIndex = iIndex + 1;
+			}
+			
+			return;
+		}
+		
+		
+		method void drawSticks(){
+			var int i;
+			let i = 0;
+			while(i < startCount)
+			{
+				do Output.printInt( matchSticks[i] );
+				let i = i + 1;
+			}
+			do Output.println();
+			return;
+		}
+		
+		method int GetRandom(int roof){
+			return mod(31, roof);
+		}
+		
+		method int getPlayerPick(){			
+			var int pick;
+			
+			do Output.printString("Pick 1, 2 or 3 matches. ");
+			while(true){
+				let pick = Keyboard.readChar() - 48;
+				if(pick > 0){ if(pick < 4){
+					do Output.println();
+					return Math.min(pick, remainingCount);
+				}}				
+				do Output.backSpace();
+			}
+			return 0; // line should never be reached.
+		}
+		
+		method int getComputerPick(){
+			var int pick;
+						
+			let pick = mod(remainingCount - 1, 4);
+			if(pick = 0){
+				// do Output.printString("(Random) ");
+				let pick =  Math.min(remainingCount, random4(remainingCount));
+			}
+			else{
+				// do Output.printString("Calculated  ");
+			}
+			return pick;			
+		}
+		
+		method int mod(int num, int modulus){
+			return num - ((Math.divide(num, modulus) * modulus));
+		}
+		
+		method int random4(int seed){
+			return mod(((19 * seed)/17), 3) + 1;
+		}
+		
+		method void setCurrentPlayerName(){
+			if(currentPlayer = 0){
+					let currentPlayerName = "Computer";
+				}
+				else{
+					let currentPlayerName = "You";
+				}
+				return;
+		}
+		
+		method void displayWelcome(){
+			do Output.println();
+			do Output.println();
+			do Output.printString("             ********************************");
+			do Output.println();
+			do Output.printString("             *                              *");
+			do Output.println();
+			do Output.printString("             *  Welcome to the Match Game.  *");
+			do Output.println();
+			do Output.printString("             *                              *");
+			do Output.println();
+			do Output.printString("             ********************************");
+			do Output.println();
+			do Output.println();
+			do Output.printString("        DON'T pick up the last match.  It's CURSED!!");
+			do Output.println();
+			do Output.println();
+			do Output.printString("               Press any key to start a game.");
+			do Output.println();
+			do Keyboard.readChar();
+
+			return;		
+		}
+
+		method void displayResult(){
+			do Screen.clearScreen();
+			do Output.println();
+			do Output.printString("               A win for ");
+			do Output.printString(currentPlayerName);
+			do Output.printString(" !!");
+			do Output.println();
+			do Output.println();
+			do Output.printString("                ***************");
+			do Output.println();
+			do Output.printString("                *             *");
+			do Output.println();
+			do Output.printString("                *  Game Over  *");
+			do Output.println();
+			do Output.printString("                *             *");
+			do Output.println();
+			do Output.printString("                ***************");
+			do Output.println();
+			
+			return;
+		}
+}

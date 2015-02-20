@@ -1,0 +1,143 @@
+// This file is part of www.nand2tetris.org
+// and the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// File name: projects/12/String.jack
+
+/**
+ * Represents a String object. Implements the String type.
+ */
+class String {
+	
+	field Array chars;
+	field int max;
+	field int length;
+
+    /** Constructs a new empty String with a maximum length of maxLength. */
+    constructor String new(int maxLength) {
+    	if(maxLength > 0){
+    		let chars = Array.new(maxLength);
+    	}
+	   	let max = maxLength;
+	   	let length = 0;
+    	return this;
+    }
+
+    /** De-allocates the string and frees its space. */
+    method void dispose() {
+    	if(max > 0){
+    		do Memory.deAlloc(chars);
+    	}
+    	return;
+    }
+
+    /** Returns the current length of this String. */
+    method int length() {
+    	return length;
+    }
+
+    /** Returns the character at location j. */
+    method char charAt(int j) {
+    	return chars[j];
+    }
+
+    /** Sets the j'th character of this string to be c. */
+    method void setCharAt(int j, char c) {
+	   	let chars[j] = c;
+    	return ;
+    }
+
+    /** Appends the character c to the end of this String.
+     *  Returns this string as the return value. */
+    method String appendChar(char c) {
+    	let chars[length] = c;
+     	let length = length + 1;
+   		return this;
+    }
+
+    /** Erases the last character from this String. */
+    method void eraseLastChar() {
+    	let length = length - 1;
+    	return ;
+    }
+
+    /** Returns the integer value of this String until the first non
+     *  numeric character. */
+    method int intValue() {
+    	var int i;
+    	var int col;
+    	var int total;
+    	var boolean isNeg;
+        	
+    	if((length > 0) & (chars[0] = 45)){
+    		let i = 1;
+    		let isNeg = true;
+    	}
+    	else{
+    	   	let i = 0;
+		}
+    	   	
+    	while((i < length) & (chars[i] > 47) & (chars[i] < 58) ){    		    	
+   			let i = i + 1;
+    	}
+    	
+    	let col = 1;
+    	let total = 0;
+    	while(i > 0){
+    		let i = i-1;
+     	 	if(chars[i] > 47){
+    			let total = total + Math.multiply(col, chars[i] - 48);
+    		}
+    		let col = Math.multiply(10, col);
+    	}
+    	if(isNeg){
+    		let total = -total;
+    	}
+    	return total;
+    }
+
+    /** Sets this String to hold a representation of the given number. */
+    method void setInt(int number) {
+    	var int col;
+    	var int q;
+    	var boolean gotDigit;
+    	  	
+    	let col = 10000;
+    	let length = 0;
+    	
+    	if(number < 0){
+    		do appendChar(45);
+    		let number = -number;
+     	}
+    	
+    	while(col > 0){
+     		let q = Math.divide(number, col);
+    		if(q > 0){
+    			let number = number - (q * col);    				
+    		}
+    		if((q > 0) | gotDigit){
+    			do appendChar(q + 48);
+    			let gotDigit = true;
+    		}
+    		let col = Math.divide(col, 10);
+    	}
+    	if(~gotDigit){
+    		do appendChar(48);
+    	}
+    	return;
+    }
+
+    /** Returns the new line character. */
+    function char newLine() {
+     	return 128;
+   }
+
+    /** Returns the backspace character. */
+    function char backSpace() {
+    	return 129;
+    }
+
+    /** Returns the double quote (") character. */
+    function char doubleQuote() {
+    	return 34;
+    }
+}

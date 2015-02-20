@@ -1,0 +1,544 @@
+<class>
+  <keyword> class </keyword>
+  <identifier type="SquareGame" beingDefined="True" kind="STATIC" category="class" index="0"> SquareGame </identifier>
+  <symbol> { </symbol>
+  <classVarDec>
+    <keyword> field </keyword>
+    <identifier type="" beingDefined="False" kind="NONE" category="" index="0"> Square </identifier>
+    <identifier type="Square" beingDefined="True" kind="FIELD" category="variable" index="0"> square </identifier>
+    <symbol> ; </symbol>
+  </classVarDec>
+  <classVarDec>
+    <keyword> field </keyword>
+    <keyword> int </keyword>
+    <identifier type="int" beingDefined="True" kind="FIELD" category="variable" index="1"> direction </identifier>
+    <symbol> ; </symbol>
+  </classVarDec>
+  <subroutineDec>
+    <keyword> constructor </keyword>
+    <identifier type="SquareGame" beingDefined="False" kind="STATIC" category="class" index="0"> SquareGame </identifier>
+    <identifier type="SquareGame" beingDefined="True" kind="STATIC" category="subroutine" index="1"> new </identifier>
+    <symbol> ( </symbol>
+    <parameterList>
+    </parameterList>
+    <symbol> ) </symbol>
+    <subroutineBody>
+      <symbol> { </symbol>
+      <statements>
+        <letStatement>
+          <keyword> let </keyword>
+          <identifier type="Square" beingDefined="False" kind="FIELD" category="variable" index="0"> square </identifier>
+          <symbol> = </symbol>
+          <expression>
+            <term>
+              <identifier type="Square" beingDefined="False" kind="FIELD" category="variable" index="0"> square </identifier>
+            </term>
+          </expression>
+          <symbol> ; </symbol>
+        </letStatement>
+        <letStatement>
+          <keyword> let </keyword>
+          <identifier type="int" beingDefined="False" kind="FIELD" category="variable" index="1"> direction </identifier>
+          <symbol> = </symbol>
+          <expression>
+            <term>
+              <identifier type="int" beingDefined="False" kind="FIELD" category="variable" index="1"> direction </identifier>
+            </term>
+          </expression>
+          <symbol> ; </symbol>
+        </letStatement>
+        <returnStatement>
+          <keyword> return </keyword>
+          <expression>
+            <term>
+              <identifier type="Square" beingDefined="False" kind="FIELD" category="variable" index="0"> square </identifier>
+            </term>
+          </expression>
+          <symbol> ; </symbol>
+        </returnStatement>
+      </statements>
+      <symbol> } </symbol>
+    </subroutineBody>
+  </subroutineDec>
+  <subroutineDec>
+    <keyword> method </keyword>
+    <keyword> void </keyword>
+    <identifier type="void" beingDefined="True" kind="STATIC" category="subroutine" index="2"> dispose </identifier>
+    <symbol> ( </symbol>
+    <parameterList>
+    </parameterList>
+    <symbol> ) </symbol>
+    <subroutineBody>
+      <symbol> { </symbol>
+      <statements>
+        <doStatement>
+          <keyword> do </keyword>
+          <identifier type="Square" beingDefined="False" kind="FIELD" category="variable" index="0"> square </identifier>
+          <symbol> . </symbol>
+          <identifier type="void" beingDefined="False" kind="STATIC" category="subroutine" index="2"> dispose </identifier>
+          <symbol> ( </symbol>
+          <expressionList>
+          </expressionList>
+          <symbol> ) </symbol>
+          <symbol> ; </symbol>
+        </doStatement>
+        <doStatement>
+          <keyword> do </keyword>
+          <identifier type="" beingDefined="False" kind="NONE" category="" index="0"> Memory </identifier>
+          <symbol> . </symbol>
+          <identifier type="" beingDefined="False" kind="NONE" category="" index="0"> deAlloc </identifier>
+          <symbol> ( </symbol>
+          <expressionList>
+            <expression>
+              <term>
+                <identifier type="Square" beingDefined="False" kind="FIELD" category="variable" index="0"> square </identifier>
+              </term>
+            </expression>
+          </expressionList>
+          <symbol> ) </symbol>
+          <symbol> ; </symbol>
+        </doStatement>
+        <returnStatement>
+          <keyword> return </keyword>
+          <symbol> ; </symbol>
+        </returnStatement>
+      </statements>
+      <symbol> } </symbol>
+    </subroutineBody>
+  </subroutineDec>
+  <subroutineDec>
+    <keyword> method </keyword>
+    <keyword> void </keyword>
+    <identifier type="void" beingDefined="True" kind="STATIC" category="subroutine" index="3"> run </identifier>
+    <symbol> ( </symbol>
+    <parameterList>
+    </parameterList>
+    <symbol> ) </symbol>
+    <subroutineBody>
+      <symbol> { </symbol>
+      <varDec>
+        <keyword> var </keyword>
+        <keyword> char </keyword>
+        <identifier type="char" beingDefined="True" kind="VAR" category="variable" index="0"> key </identifier>
+        <symbol> ; </symbol>
+      </varDec>
+      <varDec>
+        <keyword> var </keyword>
+        <keyword> boolean </keyword>
+        <identifier type="boolean" beingDefined="True" kind="VAR" category="variable" index="1"> exit </identifier>
+        <symbol> ; </symbol>
+      </varDec>
+      <statements>
+        <letStatement>
+          <keyword> let </keyword>
+          <identifier type="boolean" beingDefined="False" kind="VAR" category="variable" index="1"> exit </identifier>
+          <symbol> = </symbol>
+          <expression>
+            <term>
+              <identifier type="char" beingDefined="False" kind="VAR" category="variable" index="0"> key </identifier>
+            </term>
+          </expression>
+          <symbol> ; </symbol>
+        </letStatement>
+        <whileStatement>
+          <keyword> while </keyword>
+          <symbol> ( </symbol>
+          <expression>
+            <term>
+              <identifier type="boolean" beingDefined="False" kind="VAR" category="variable" index="1"> exit </identifier>
+            </term>
+          </expression>
+          <symbol> ) </symbol>
+          <symbol> { </symbol>
+          <statements>
+            <whileStatement>
+              <keyword> while </keyword>
+              <symbol> ( </symbol>
+              <expression>
+                <term>
+                  <identifier type="char" beingDefined="False" kind="VAR" category="variable" index="0"> key </identifier>
+                </term>
+              </expression>
+              <symbol> ) </symbol>
+              <symbol> { </symbol>
+              <statements>
+                <letStatement>
+                  <keyword> let </keyword>
+                  <identifier type="char" beingDefined="False" kind="VAR" category="variable" index="0"> key </identifier>
+                  <symbol> = </symbol>
+                  <expression>
+                    <term>
+                      <identifier type="char" beingDefined="False" kind="VAR" category="variable" index="0"> key </identifier>
+                    </term>
+                  </expression>
+                  <symbol> ; </symbol>
+                </letStatement>
+                <doStatement>
+                  <keyword> do </keyword>
+                  <identifier type="void" beingDefined="False" kind="STATIC" category="subroutine" index="4"> moveSquare </identifier>
+                  <symbol> ( </symbol>
+                  <expressionList>
+                  </expressionList>
+                  <symbol> ) </symbol>
+                  <symbol> ; </symbol>
+                </doStatement>
+              </statements>
+              <symbol> } </symbol>
+            </whileStatement>
+            <ifStatement>
+              <keyword> if </keyword>
+              <symbol> ( </symbol>
+              <expression>
+                <term>
+                  <identifier type="char" beingDefined="False" kind="VAR" category="variable" index="0"> key </identifier>
+                </term>
+              </expression>
+              <symbol> ) </symbol>
+              <symbol> { </symbol>
+              <statements>
+                <letStatement>
+                  <keyword> let </keyword>
+                  <identifier type="boolean" beingDefined="False" kind="VAR" category="variable" index="1"> exit </identifier>
+                  <symbol> = </symbol>
+                  <expression>
+                    <term>
+                      <identifier type="boolean" beingDefined="False" kind="VAR" category="variable" index="1"> exit </identifier>
+                    </term>
+                  </expression>
+                  <symbol> ; </symbol>
+                </letStatement>
+              </statements>
+              <symbol> } </symbol>
+            </ifStatement>
+            <ifStatement>
+              <keyword> if </keyword>
+              <symbol> ( </symbol>
+              <expression>
+                <term>
+                  <identifier type="char" beingDefined="False" kind="VAR" category="variable" index="0"> key </identifier>
+                </term>
+              </expression>
+              <symbol> ) </symbol>
+              <symbol> { </symbol>
+              <statements>
+                <doStatement>
+                  <keyword> do </keyword>
+                  <identifier type="Square" beingDefined="False" kind="FIELD" category="variable" index="0"> square </identifier>
+                  <symbol> . </symbol>
+                  <identifier type="" beingDefined="False" kind="NONE" category="" index="0"> decSize </identifier>
+                  <symbol> ( </symbol>
+                  <expressionList>
+                  </expressionList>
+                  <symbol> ) </symbol>
+                  <symbol> ; </symbol>
+                </doStatement>
+              </statements>
+              <symbol> } </symbol>
+            </ifStatement>
+            <ifStatement>
+              <keyword> if </keyword>
+              <symbol> ( </symbol>
+              <expression>
+                <term>
+                  <identifier type="char" beingDefined="False" kind="VAR" category="variable" index="0"> key </identifier>
+                </term>
+              </expression>
+              <symbol> ) </symbol>
+              <symbol> { </symbol>
+              <statements>
+                <doStatement>
+                  <keyword> do </keyword>
+                  <identifier type="Square" beingDefined="False" kind="FIELD" category="variable" index="0"> square </identifier>
+                  <symbol> . </symbol>
+                  <identifier type="" beingDefined="False" kind="NONE" category="" index="0"> incSize </identifier>
+                  <symbol> ( </symbol>
+                  <expressionList>
+                  </expressionList>
+                  <symbol> ) </symbol>
+                  <symbol> ; </symbol>
+                </doStatement>
+              </statements>
+              <symbol> } </symbol>
+            </ifStatement>
+            <ifStatement>
+              <keyword> if </keyword>
+              <symbol> ( </symbol>
+              <expression>
+                <term>
+                  <identifier type="char" beingDefined="False" kind="VAR" category="variable" index="0"> key </identifier>
+                </term>
+              </expression>
+              <symbol> ) </symbol>
+              <symbol> { </symbol>
+              <statements>
+                <letStatement>
+                  <keyword> let </keyword>
+                  <identifier type="int" beingDefined="False" kind="FIELD" category="variable" index="1"> direction </identifier>
+                  <symbol> = </symbol>
+                  <expression>
+                    <term>
+                      <identifier type="boolean" beingDefined="False" kind="VAR" category="variable" index="1"> exit </identifier>
+                    </term>
+                  </expression>
+                  <symbol> ; </symbol>
+                </letStatement>
+              </statements>
+              <symbol> } </symbol>
+            </ifStatement>
+            <ifStatement>
+              <keyword> if </keyword>
+              <symbol> ( </symbol>
+              <expression>
+                <term>
+                  <identifier type="char" beingDefined="False" kind="VAR" category="variable" index="0"> key </identifier>
+                </term>
+              </expression>
+              <symbol> ) </symbol>
+              <symbol> { </symbol>
+              <statements>
+                <letStatement>
+                  <keyword> let </keyword>
+                  <identifier type="int" beingDefined="False" kind="FIELD" category="variable" index="1"> direction </identifier>
+                  <symbol> = </symbol>
+                  <expression>
+                    <term>
+                      <identifier type="char" beingDefined="False" kind="VAR" category="variable" index="0"> key </identifier>
+                    </term>
+                  </expression>
+                  <symbol> ; </symbol>
+                </letStatement>
+              </statements>
+              <symbol> } </symbol>
+            </ifStatement>
+            <ifStatement>
+              <keyword> if </keyword>
+              <symbol> ( </symbol>
+              <expression>
+                <term>
+                  <identifier type="char" beingDefined="False" kind="VAR" category="variable" index="0"> key </identifier>
+                </term>
+              </expression>
+              <symbol> ) </symbol>
+              <symbol> { </symbol>
+              <statements>
+                <letStatement>
+                  <keyword> let </keyword>
+                  <identifier type="int" beingDefined="False" kind="FIELD" category="variable" index="1"> direction </identifier>
+                  <symbol> = </symbol>
+                  <expression>
+                    <term>
+                      <identifier type="Square" beingDefined="False" kind="FIELD" category="variable" index="0"> square </identifier>
+                    </term>
+                  </expression>
+                  <symbol> ; </symbol>
+                </letStatement>
+              </statements>
+              <symbol> } </symbol>
+            </ifStatement>
+            <ifStatement>
+              <keyword> if </keyword>
+              <symbol> ( </symbol>
+              <expression>
+                <term>
+                  <identifier type="char" beingDefined="False" kind="VAR" category="variable" index="0"> key </identifier>
+                </term>
+              </expression>
+              <symbol> ) </symbol>
+              <symbol> { </symbol>
+              <statements>
+                <letStatement>
+                  <keyword> let </keyword>
+                  <identifier type="int" beingDefined="False" kind="FIELD" category="variable" index="1"> direction </identifier>
+                  <symbol> = </symbol>
+                  <expression>
+                    <term>
+                      <identifier type="int" beingDefined="False" kind="FIELD" category="variable" index="1"> direction </identifier>
+                    </term>
+                  </expression>
+                  <symbol> ; </symbol>
+                </letStatement>
+              </statements>
+              <symbol> } </symbol>
+            </ifStatement>
+            <whileStatement>
+              <keyword> while </keyword>
+              <symbol> ( </symbol>
+              <expression>
+                <term>
+                  <identifier type="char" beingDefined="False" kind="VAR" category="variable" index="0"> key </identifier>
+                </term>
+              </expression>
+              <symbol> ) </symbol>
+              <symbol> { </symbol>
+              <statements>
+                <letStatement>
+                  <keyword> let </keyword>
+                  <identifier type="char" beingDefined="False" kind="VAR" category="variable" index="0"> key </identifier>
+                  <symbol> = </symbol>
+                  <expression>
+                    <term>
+                      <identifier type="char" beingDefined="False" kind="VAR" category="variable" index="0"> key </identifier>
+                    </term>
+                  </expression>
+                  <symbol> ; </symbol>
+                </letStatement>
+                <doStatement>
+                  <keyword> do </keyword>
+                  <identifier type="void" beingDefined="False" kind="STATIC" category="subroutine" index="4"> moveSquare </identifier>
+                  <symbol> ( </symbol>
+                  <expressionList>
+                  </expressionList>
+                  <symbol> ) </symbol>
+                  <symbol> ; </symbol>
+                </doStatement>
+              </statements>
+              <symbol> } </symbol>
+            </whileStatement>
+          </statements>
+          <symbol> } </symbol>
+        </whileStatement>
+        <returnStatement>
+          <keyword> return </keyword>
+          <symbol> ; </symbol>
+        </returnStatement>
+      </statements>
+      <symbol> } </symbol>
+    </subroutineBody>
+  </subroutineDec>
+  <subroutineDec>
+    <keyword> method </keyword>
+    <keyword> void </keyword>
+    <identifier type="void" beingDefined="True" kind="STATIC" category="subroutine" index="4"> moveSquare </identifier>
+    <symbol> ( </symbol>
+    <parameterList>
+    </parameterList>
+    <symbol> ) </symbol>
+    <subroutineBody>
+      <symbol> { </symbol>
+      <statements>
+        <ifStatement>
+          <keyword> if </keyword>
+          <symbol> ( </symbol>
+          <expression>
+            <term>
+              <identifier type="int" beingDefined="False" kind="FIELD" category="variable" index="1"> direction </identifier>
+            </term>
+          </expression>
+          <symbol> ) </symbol>
+          <symbol> { </symbol>
+          <statements>
+            <doStatement>
+              <keyword> do </keyword>
+              <identifier type="Square" beingDefined="False" kind="FIELD" category="variable" index="0"> square </identifier>
+              <symbol> . </symbol>
+              <identifier type="" beingDefined="False" kind="NONE" category="" index="0"> moveUp </identifier>
+              <symbol> ( </symbol>
+              <expressionList>
+              </expressionList>
+              <symbol> ) </symbol>
+              <symbol> ; </symbol>
+            </doStatement>
+          </statements>
+          <symbol> } </symbol>
+        </ifStatement>
+        <ifStatement>
+          <keyword> if </keyword>
+          <symbol> ( </symbol>
+          <expression>
+            <term>
+              <identifier type="int" beingDefined="False" kind="FIELD" category="variable" index="1"> direction </identifier>
+            </term>
+          </expression>
+          <symbol> ) </symbol>
+          <symbol> { </symbol>
+          <statements>
+            <doStatement>
+              <keyword> do </keyword>
+              <identifier type="Square" beingDefined="False" kind="FIELD" category="variable" index="0"> square </identifier>
+              <symbol> . </symbol>
+              <identifier type="" beingDefined="False" kind="NONE" category="" index="0"> moveDown </identifier>
+              <symbol> ( </symbol>
+              <expressionList>
+              </expressionList>
+              <symbol> ) </symbol>
+              <symbol> ; </symbol>
+            </doStatement>
+          </statements>
+          <symbol> } </symbol>
+        </ifStatement>
+        <ifStatement>
+          <keyword> if </keyword>
+          <symbol> ( </symbol>
+          <expression>
+            <term>
+              <identifier type="int" beingDefined="False" kind="FIELD" category="variable" index="1"> direction </identifier>
+            </term>
+          </expression>
+          <symbol> ) </symbol>
+          <symbol> { </symbol>
+          <statements>
+            <doStatement>
+              <keyword> do </keyword>
+              <identifier type="Square" beingDefined="False" kind="FIELD" category="variable" index="0"> square </identifier>
+              <symbol> . </symbol>
+              <identifier type="" beingDefined="False" kind="NONE" category="" index="0"> moveLeft </identifier>
+              <symbol> ( </symbol>
+              <expressionList>
+              </expressionList>
+              <symbol> ) </symbol>
+              <symbol> ; </symbol>
+            </doStatement>
+          </statements>
+          <symbol> } </symbol>
+        </ifStatement>
+        <ifStatement>
+          <keyword> if </keyword>
+          <symbol> ( </symbol>
+          <expression>
+            <term>
+              <identifier type="int" beingDefined="False" kind="FIELD" category="variable" index="1"> direction </identifier>
+            </term>
+          </expression>
+          <symbol> ) </symbol>
+          <symbol> { </symbol>
+          <statements>
+            <doStatement>
+              <keyword> do </keyword>
+              <identifier type="Square" beingDefined="False" kind="FIELD" category="variable" index="0"> square </identifier>
+              <symbol> . </symbol>
+              <identifier type="" beingDefined="False" kind="NONE" category="" index="0"> moveRight </identifier>
+              <symbol> ( </symbol>
+              <expressionList>
+              </expressionList>
+              <symbol> ) </symbol>
+              <symbol> ; </symbol>
+            </doStatement>
+          </statements>
+          <symbol> } </symbol>
+        </ifStatement>
+        <doStatement>
+          <keyword> do </keyword>
+          <identifier type="" beingDefined="False" kind="NONE" category="" index="0"> Sys </identifier>
+          <symbol> . </symbol>
+          <identifier type="" beingDefined="False" kind="NONE" category="" index="0"> wait </identifier>
+          <symbol> ( </symbol>
+          <expressionList>
+            <expression>
+              <term>
+                <identifier type="int" beingDefined="False" kind="FIELD" category="variable" index="1"> direction </identifier>
+              </term>
+            </expression>
+          </expressionList>
+          <symbol> ) </symbol>
+          <symbol> ; </symbol>
+        </doStatement>
+        <returnStatement>
+          <keyword> return </keyword>
+          <symbol> ; </symbol>
+        </returnStatement>
+      </statements>
+      <symbol> } </symbol>
+    </subroutineBody>
+  </subroutineDec>
+  <symbol> } </symbol>
+</class>

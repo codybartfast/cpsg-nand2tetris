@@ -1,0 +1,1211 @@
+{"Token": "class", "Children": [
+    {"Token": "keyword", "Value": "class"}
+   ,{"Token": "identifier", "Value": "Square", "Kind": "NONE", "Type": "Square", "Index": "0"}
+   ,{"Token": "symbol", "Value": "{"}
+   ,{"Token": "classVarDec", "Children": [
+       {"Token": "keyword", "Value": "field"}
+      ,{"Token": "keyword", "Value": "int"}
+      ,{"Token": "identifier", "Value": "x", "Kind": "FIELD", "Type": "int", "Index": "0"}
+      ,{"Token": "symbol", "Value": ","}
+      ,{"Token": "identifier", "Value": "y", "Kind": "FIELD", "Type": "int", "Index": "1"}
+      ,{"Token": "symbol", "Value": ";"}
+   ]}
+   ,{"Token": "classVarDec", "Children": [
+       {"Token": "keyword", "Value": "field"}
+      ,{"Token": "keyword", "Value": "int"}
+      ,{"Token": "identifier", "Value": "size", "Kind": "FIELD", "Type": "int", "Index": "2"}
+      ,{"Token": "symbol", "Value": ";"}
+   ]}
+   ,{"Token": "subroutineDec", "VarCount": "0", "FieldCount": "3", "Children": [
+       {"Token": "keyword", "Value": "constructor"}
+      ,{"Token": "identifier", "Value": "Square", "Kind": "NONE", "Type": "", "Index": "0"}
+      ,{"Token": "identifier", "Value": "new", "Kind": "NONE", "Type": "Square", "Index": "0"}
+      ,{"Token": "symbol", "Value": "("}
+      ,{"Token": "parameterList", "Children": [
+          {"Token": "keyword", "Value": "int"}
+         ,{"Token": "identifier", "Value": "Ax", "Kind": "ARG", "Type": "int", "Index": "0"}
+         ,{"Token": "symbol", "Value": ","}
+         ,{"Token": "keyword", "Value": "int"}
+         ,{"Token": "identifier", "Value": "Ay", "Kind": "ARG", "Type": "int", "Index": "1"}
+         ,{"Token": "symbol", "Value": ","}
+         ,{"Token": "keyword", "Value": "int"}
+         ,{"Token": "identifier", "Value": "Asize", "Kind": "ARG", "Type": "int", "Index": "2"}
+      ]}
+      ,{"Token": "symbol", "Value": ")"}
+      ,{"Token": "subroutineBody", "Children": [
+          {"Token": "symbol", "Value": "{"}
+         ,{"Token": "statements", "Children": [
+             {"Token": "letStatement", "Children": [
+                {"Token": "keyword", "Value": "let"}
+               ,{"Token": "identifier", "Value": "x", "Kind": "FIELD", "Type": "int", "Index": "0"}
+               ,{"Token": "symbol", "Value": "="}
+               ,{"Token": "expression", "Children": [
+                   {"Token": "term", "Children": [
+                      {"Token": "identifier", "Value": "Ax", "Kind": "ARG", "Type": "int", "Index": "0"}
+                  ]}
+               ]}
+               ,{"Token": "symbol", "Value": ";"}
+            ]}
+            ,{"Token": "letStatement", "Children": [
+                {"Token": "keyword", "Value": "let"}
+               ,{"Token": "identifier", "Value": "y", "Kind": "FIELD", "Type": "int", "Index": "1"}
+               ,{"Token": "symbol", "Value": "="}
+               ,{"Token": "expression", "Children": [
+                   {"Token": "term", "Children": [
+                      {"Token": "identifier", "Value": "Ay", "Kind": "ARG", "Type": "int", "Index": "1"}
+                  ]}
+               ]}
+               ,{"Token": "symbol", "Value": ";"}
+            ]}
+            ,{"Token": "letStatement", "Children": [
+                {"Token": "keyword", "Value": "let"}
+               ,{"Token": "identifier", "Value": "size", "Kind": "FIELD", "Type": "int", "Index": "2"}
+               ,{"Token": "symbol", "Value": "="}
+               ,{"Token": "expression", "Children": [
+                   {"Token": "term", "Children": [
+                      {"Token": "identifier", "Value": "Asize", "Kind": "ARG", "Type": "int", "Index": "2"}
+                  ]}
+               ]}
+               ,{"Token": "symbol", "Value": ";"}
+            ]}
+            ,{"Token": "doStatement", "Children": [
+                {"Token": "keyword", "Value": "do"}
+               ,{"Token": "identifier", "Value": "draw", "Kind": "NONE", "Type": "", "Index": "0"}
+               ,{"Token": "symbol", "Value": "("}
+               ,{"Token": "expressionList", "Children": [
+               ]}
+               ,{"Token": "symbol", "Value": ")"}
+               ,{"Token": "symbol", "Value": ";"}
+            ]}
+            ,{"Token": "returnStatement", "Children": [
+                {"Token": "keyword", "Value": "return"}
+               ,{"Token": "expression", "Children": [
+                   {"Token": "term", "Children": [
+                      {"Token": "keyword", "Value": "this"}
+                  ]}
+               ]}
+               ,{"Token": "symbol", "Value": ";"}
+            ]}
+         ]}
+         ,{"Token": "symbol", "Value": "}"}
+      ]}
+   ]}
+   ,{"Token": "subroutineDec", "VarCount": "0", "Children": [
+       {"Token": "keyword", "Value": "method"}
+      ,{"Token": "keyword", "Value": "void"}
+      ,{"Token": "identifier", "Value": "dispose", "Kind": "NONE", "Type": "void", "Index": "0"}
+      ,{"Token": "symbol", "Value": "("}
+      ,{"Token": "parameterList", "Children": [
+      ]}
+      ,{"Token": "symbol", "Value": ")"}
+      ,{"Token": "subroutineBody", "Children": [
+          {"Token": "symbol", "Value": "{"}
+         ,{"Token": "statements", "Children": [
+             {"Token": "doStatement", "Children": [
+                {"Token": "keyword", "Value": "do"}
+               ,{"Token": "identifier", "Value": "Memory", "Kind": "NONE", "Type": "", "Index": "0"}
+               ,{"Token": "symbol", "Value": "."}
+               ,{"Token": "identifier", "Value": "deAlloc", "Kind": "NONE", "Type": "", "Index": "0"}
+               ,{"Token": "symbol", "Value": "("}
+               ,{"Token": "expressionList", "Children": [
+                   {"Token": "expression", "Children": [
+                      {"Token": "term", "Children": [
+                         {"Token": "keyword", "Value": "this"}
+                     ]}
+                  ]}
+               ]}
+               ,{"Token": "symbol", "Value": ")"}
+               ,{"Token": "symbol", "Value": ";"}
+            ]}
+            ,{"Token": "returnStatement", "Children": [
+                {"Token": "keyword", "Value": "return"}
+               ,{"Token": "symbol", "Value": ";"}
+            ]}
+         ]}
+         ,{"Token": "symbol", "Value": "}"}
+      ]}
+   ]}
+   ,{"Token": "subroutineDec", "VarCount": "0", "Children": [
+       {"Token": "keyword", "Value": "method"}
+      ,{"Token": "keyword", "Value": "void"}
+      ,{"Token": "identifier", "Value": "draw", "Kind": "NONE", "Type": "void", "Index": "0"}
+      ,{"Token": "symbol", "Value": "("}
+      ,{"Token": "parameterList", "Children": [
+      ]}
+      ,{"Token": "symbol", "Value": ")"}
+      ,{"Token": "subroutineBody", "Children": [
+          {"Token": "symbol", "Value": "{"}
+         ,{"Token": "statements", "Children": [
+             {"Token": "doStatement", "Children": [
+                {"Token": "keyword", "Value": "do"}
+               ,{"Token": "identifier", "Value": "Screen", "Kind": "NONE", "Type": "", "Index": "0"}
+               ,{"Token": "symbol", "Value": "."}
+               ,{"Token": "identifier", "Value": "setColor", "Kind": "NONE", "Type": "", "Index": "0"}
+               ,{"Token": "symbol", "Value": "("}
+               ,{"Token": "expressionList", "Children": [
+                   {"Token": "expression", "Children": [
+                      {"Token": "term", "Children": [
+                         {"Token": "keyword", "Value": "true"}
+                     ]}
+                  ]}
+               ]}
+               ,{"Token": "symbol", "Value": ")"}
+               ,{"Token": "symbol", "Value": ";"}
+            ]}
+            ,{"Token": "doStatement", "Children": [
+                {"Token": "keyword", "Value": "do"}
+               ,{"Token": "identifier", "Value": "Screen", "Kind": "NONE", "Type": "", "Index": "0"}
+               ,{"Token": "symbol", "Value": "."}
+               ,{"Token": "identifier", "Value": "drawRectangle", "Kind": "NONE", "Type": "", "Index": "0"}
+               ,{"Token": "symbol", "Value": "("}
+               ,{"Token": "expressionList", "Children": [
+                   {"Token": "expression", "Children": [
+                      {"Token": "term", "Children": [
+                         {"Token": "identifier", "Value": "x", "Kind": "FIELD", "Type": "int", "Index": "0"}
+                     ]}
+                  ]}
+                  ,{"Token": "symbol", "Value": ","}
+                  ,{"Token": "expression", "Children": [
+                      {"Token": "term", "Children": [
+                         {"Token": "identifier", "Value": "y", "Kind": "FIELD", "Type": "int", "Index": "1"}
+                     ]}
+                  ]}
+                  ,{"Token": "symbol", "Value": ","}
+                  ,{"Token": "expression", "Children": [
+                      {"Token": "term", "Children": [
+                         {"Token": "identifier", "Value": "x", "Kind": "FIELD", "Type": "int", "Index": "0"}
+                     ]}
+                     ,{"Token": "symbol", "Value": "+"}
+                     ,{"Token": "term", "Children": [
+                         {"Token": "identifier", "Value": "size", "Kind": "FIELD", "Type": "int", "Index": "2"}
+                     ]}
+                  ]}
+                  ,{"Token": "symbol", "Value": ","}
+                  ,{"Token": "expression", "Children": [
+                      {"Token": "term", "Children": [
+                         {"Token": "identifier", "Value": "y", "Kind": "FIELD", "Type": "int", "Index": "1"}
+                     ]}
+                     ,{"Token": "symbol", "Value": "+"}
+                     ,{"Token": "term", "Children": [
+                         {"Token": "identifier", "Value": "size", "Kind": "FIELD", "Type": "int", "Index": "2"}
+                     ]}
+                  ]}
+               ]}
+               ,{"Token": "symbol", "Value": ")"}
+               ,{"Token": "symbol", "Value": ";"}
+            ]}
+            ,{"Token": "returnStatement", "Children": [
+                {"Token": "keyword", "Value": "return"}
+               ,{"Token": "symbol", "Value": ";"}
+            ]}
+         ]}
+         ,{"Token": "symbol", "Value": "}"}
+      ]}
+   ]}
+   ,{"Token": "subroutineDec", "VarCount": "0", "Children": [
+       {"Token": "keyword", "Value": "method"}
+      ,{"Token": "keyword", "Value": "void"}
+      ,{"Token": "identifier", "Value": "erase", "Kind": "NONE", "Type": "void", "Index": "0"}
+      ,{"Token": "symbol", "Value": "("}
+      ,{"Token": "parameterList", "Children": [
+      ]}
+      ,{"Token": "symbol", "Value": ")"}
+      ,{"Token": "subroutineBody", "Children": [
+          {"Token": "symbol", "Value": "{"}
+         ,{"Token": "statements", "Children": [
+             {"Token": "doStatement", "Children": [
+                {"Token": "keyword", "Value": "do"}
+               ,{"Token": "identifier", "Value": "Screen", "Kind": "NONE", "Type": "", "Index": "0"}
+               ,{"Token": "symbol", "Value": "."}
+               ,{"Token": "identifier", "Value": "setColor", "Kind": "NONE", "Type": "", "Index": "0"}
+               ,{"Token": "symbol", "Value": "("}
+               ,{"Token": "expressionList", "Children": [
+                   {"Token": "expression", "Children": [
+                      {"Token": "term", "Children": [
+                         {"Token": "keyword", "Value": "false"}
+                     ]}
+                  ]}
+               ]}
+               ,{"Token": "symbol", "Value": ")"}
+               ,{"Token": "symbol", "Value": ";"}
+            ]}
+            ,{"Token": "doStatement", "Children": [
+                {"Token": "keyword", "Value": "do"}
+               ,{"Token": "identifier", "Value": "Screen", "Kind": "NONE", "Type": "", "Index": "0"}
+               ,{"Token": "symbol", "Value": "."}
+               ,{"Token": "identifier", "Value": "drawRectangle", "Kind": "NONE", "Type": "", "Index": "0"}
+               ,{"Token": "symbol", "Value": "("}
+               ,{"Token": "expressionList", "Children": [
+                   {"Token": "expression", "Children": [
+                      {"Token": "term", "Children": [
+                         {"Token": "identifier", "Value": "x", "Kind": "FIELD", "Type": "int", "Index": "0"}
+                     ]}
+                  ]}
+                  ,{"Token": "symbol", "Value": ","}
+                  ,{"Token": "expression", "Children": [
+                      {"Token": "term", "Children": [
+                         {"Token": "identifier", "Value": "y", "Kind": "FIELD", "Type": "int", "Index": "1"}
+                     ]}
+                  ]}
+                  ,{"Token": "symbol", "Value": ","}
+                  ,{"Token": "expression", "Children": [
+                      {"Token": "term", "Children": [
+                         {"Token": "identifier", "Value": "x", "Kind": "FIELD", "Type": "int", "Index": "0"}
+                     ]}
+                     ,{"Token": "symbol", "Value": "+"}
+                     ,{"Token": "term", "Children": [
+                         {"Token": "identifier", "Value": "size", "Kind": "FIELD", "Type": "int", "Index": "2"}
+                     ]}
+                  ]}
+                  ,{"Token": "symbol", "Value": ","}
+                  ,{"Token": "expression", "Children": [
+                      {"Token": "term", "Children": [
+                         {"Token": "identifier", "Value": "y", "Kind": "FIELD", "Type": "int", "Index": "1"}
+                     ]}
+                     ,{"Token": "symbol", "Value": "+"}
+                     ,{"Token": "term", "Children": [
+                         {"Token": "identifier", "Value": "size", "Kind": "FIELD", "Type": "int", "Index": "2"}
+                     ]}
+                  ]}
+               ]}
+               ,{"Token": "symbol", "Value": ")"}
+               ,{"Token": "symbol", "Value": ";"}
+            ]}
+            ,{"Token": "returnStatement", "Children": [
+                {"Token": "keyword", "Value": "return"}
+               ,{"Token": "symbol", "Value": ";"}
+            ]}
+         ]}
+         ,{"Token": "symbol", "Value": "}"}
+      ]}
+   ]}
+   ,{"Token": "subroutineDec", "VarCount": "0", "Children": [
+       {"Token": "keyword", "Value": "method"}
+      ,{"Token": "keyword", "Value": "void"}
+      ,{"Token": "identifier", "Value": "incSize", "Kind": "NONE", "Type": "void", "Index": "0"}
+      ,{"Token": "symbol", "Value": "("}
+      ,{"Token": "parameterList", "Children": [
+      ]}
+      ,{"Token": "symbol", "Value": ")"}
+      ,{"Token": "subroutineBody", "Children": [
+          {"Token": "symbol", "Value": "{"}
+         ,{"Token": "statements", "Children": [
+             {"Token": "ifStatement", "Children": [
+                {"Token": "keyword", "Value": "if"}
+               ,{"Token": "symbol", "Value": "("}
+               ,{"Token": "expression", "Children": [
+                   {"Token": "term", "Children": [
+                      {"Token": "symbol", "Value": "("}
+                     ,{"Token": "expression", "Children": [
+                         {"Token": "term", "Children": [
+                            {"Token": "symbol", "Value": "("}
+                           ,{"Token": "expression", "Children": [
+                               {"Token": "term", "Children": [
+                                  {"Token": "identifier", "Value": "y", "Kind": "FIELD", "Type": "int", "Index": "1"}
+                              ]}
+                              ,{"Token": "symbol", "Value": "+"}
+                              ,{"Token": "term", "Children": [
+                                  {"Token": "identifier", "Value": "size", "Kind": "FIELD", "Type": "int", "Index": "2"}
+                              ]}
+                           ]}
+                           ,{"Token": "symbol", "Value": ")"}
+                        ]}
+                        ,{"Token": "symbol", "Value": "\u003c"}
+                        ,{"Token": "term", "Children": [
+                            {"Token": "integerConstant", "Value": "254"}
+                        ]}
+                     ]}
+                     ,{"Token": "symbol", "Value": ")"}
+                  ]}
+                  ,{"Token": "symbol", "Value": "\u0026"}
+                  ,{"Token": "term", "Children": [
+                      {"Token": "symbol", "Value": "("}
+                     ,{"Token": "expression", "Children": [
+                         {"Token": "term", "Children": [
+                            {"Token": "symbol", "Value": "("}
+                           ,{"Token": "expression", "Children": [
+                               {"Token": "term", "Children": [
+                                  {"Token": "identifier", "Value": "x", "Kind": "FIELD", "Type": "int", "Index": "0"}
+                              ]}
+                              ,{"Token": "symbol", "Value": "+"}
+                              ,{"Token": "term", "Children": [
+                                  {"Token": "identifier", "Value": "size", "Kind": "FIELD", "Type": "int", "Index": "2"}
+                              ]}
+                           ]}
+                           ,{"Token": "symbol", "Value": ")"}
+                        ]}
+                        ,{"Token": "symbol", "Value": "\u003c"}
+                        ,{"Token": "term", "Children": [
+                            {"Token": "integerConstant", "Value": "510"}
+                        ]}
+                     ]}
+                     ,{"Token": "symbol", "Value": ")"}
+                  ]}
+               ]}
+               ,{"Token": "symbol", "Value": ")"}
+               ,{"Token": "symbol", "Value": "{"}
+               ,{"Token": "statements", "Children": [
+                   {"Token": "doStatement", "Children": [
+                      {"Token": "keyword", "Value": "do"}
+                     ,{"Token": "identifier", "Value": "erase", "Kind": "NONE", "Type": "", "Index": "0"}
+                     ,{"Token": "symbol", "Value": "("}
+                     ,{"Token": "expressionList", "Children": [
+                     ]}
+                     ,{"Token": "symbol", "Value": ")"}
+                     ,{"Token": "symbol", "Value": ";"}
+                  ]}
+                  ,{"Token": "letStatement", "Children": [
+                      {"Token": "keyword", "Value": "let"}
+                     ,{"Token": "identifier", "Value": "size", "Kind": "FIELD", "Type": "int", "Index": "2"}
+                     ,{"Token": "symbol", "Value": "="}
+                     ,{"Token": "expression", "Children": [
+                         {"Token": "term", "Children": [
+                            {"Token": "identifier", "Value": "size", "Kind": "FIELD", "Type": "int", "Index": "2"}
+                        ]}
+                        ,{"Token": "symbol", "Value": "+"}
+                        ,{"Token": "term", "Children": [
+                            {"Token": "integerConstant", "Value": "2"}
+                        ]}
+                     ]}
+                     ,{"Token": "symbol", "Value": ";"}
+                  ]}
+                  ,{"Token": "doStatement", "Children": [
+                      {"Token": "keyword", "Value": "do"}
+                     ,{"Token": "identifier", "Value": "draw", "Kind": "NONE", "Type": "", "Index": "0"}
+                     ,{"Token": "symbol", "Value": "("}
+                     ,{"Token": "expressionList", "Children": [
+                     ]}
+                     ,{"Token": "symbol", "Value": ")"}
+                     ,{"Token": "symbol", "Value": ";"}
+                  ]}
+               ]}
+               ,{"Token": "symbol", "Value": "}"}
+            ]}
+            ,{"Token": "returnStatement", "Children": [
+                {"Token": "keyword", "Value": "return"}
+               ,{"Token": "symbol", "Value": ";"}
+            ]}
+         ]}
+         ,{"Token": "symbol", "Value": "}"}
+      ]}
+   ]}
+   ,{"Token": "subroutineDec", "VarCount": "0", "Children": [
+       {"Token": "keyword", "Value": "method"}
+      ,{"Token": "keyword", "Value": "void"}
+      ,{"Token": "identifier", "Value": "decSize", "Kind": "NONE", "Type": "void", "Index": "0"}
+      ,{"Token": "symbol", "Value": "("}
+      ,{"Token": "parameterList", "Children": [
+      ]}
+      ,{"Token": "symbol", "Value": ")"}
+      ,{"Token": "subroutineBody", "Children": [
+          {"Token": "symbol", "Value": "{"}
+         ,{"Token": "statements", "Children": [
+             {"Token": "ifStatement", "Children": [
+                {"Token": "keyword", "Value": "if"}
+               ,{"Token": "symbol", "Value": "("}
+               ,{"Token": "expression", "Children": [
+                   {"Token": "term", "Children": [
+                      {"Token": "identifier", "Value": "size", "Kind": "FIELD", "Type": "int", "Index": "2"}
+                  ]}
+                  ,{"Token": "symbol", "Value": "\u003e"}
+                  ,{"Token": "term", "Children": [
+                      {"Token": "integerConstant", "Value": "2"}
+                  ]}
+               ]}
+               ,{"Token": "symbol", "Value": ")"}
+               ,{"Token": "symbol", "Value": "{"}
+               ,{"Token": "statements", "Children": [
+                   {"Token": "doStatement", "Children": [
+                      {"Token": "keyword", "Value": "do"}
+                     ,{"Token": "identifier", "Value": "erase", "Kind": "NONE", "Type": "", "Index": "0"}
+                     ,{"Token": "symbol", "Value": "("}
+                     ,{"Token": "expressionList", "Children": [
+                     ]}
+                     ,{"Token": "symbol", "Value": ")"}
+                     ,{"Token": "symbol", "Value": ";"}
+                  ]}
+                  ,{"Token": "letStatement", "Children": [
+                      {"Token": "keyword", "Value": "let"}
+                     ,{"Token": "identifier", "Value": "size", "Kind": "FIELD", "Type": "int", "Index": "2"}
+                     ,{"Token": "symbol", "Value": "="}
+                     ,{"Token": "expression", "Children": [
+                         {"Token": "term", "Children": [
+                            {"Token": "identifier", "Value": "size", "Kind": "FIELD", "Type": "int", "Index": "2"}
+                        ]}
+                        ,{"Token": "symbol", "Value": "-"}
+                        ,{"Token": "term", "Children": [
+                            {"Token": "integerConstant", "Value": "2"}
+                        ]}
+                     ]}
+                     ,{"Token": "symbol", "Value": ";"}
+                  ]}
+                  ,{"Token": "doStatement", "Children": [
+                      {"Token": "keyword", "Value": "do"}
+                     ,{"Token": "identifier", "Value": "draw", "Kind": "NONE", "Type": "", "Index": "0"}
+                     ,{"Token": "symbol", "Value": "("}
+                     ,{"Token": "expressionList", "Children": [
+                     ]}
+                     ,{"Token": "symbol", "Value": ")"}
+                     ,{"Token": "symbol", "Value": ";"}
+                  ]}
+               ]}
+               ,{"Token": "symbol", "Value": "}"}
+            ]}
+            ,{"Token": "returnStatement", "Children": [
+                {"Token": "keyword", "Value": "return"}
+               ,{"Token": "symbol", "Value": ";"}
+            ]}
+         ]}
+         ,{"Token": "symbol", "Value": "}"}
+      ]}
+   ]}
+   ,{"Token": "subroutineDec", "VarCount": "0", "Children": [
+       {"Token": "keyword", "Value": "method"}
+      ,{"Token": "keyword", "Value": "void"}
+      ,{"Token": "identifier", "Value": "moveUp", "Kind": "NONE", "Type": "void", "Index": "0"}
+      ,{"Token": "symbol", "Value": "("}
+      ,{"Token": "parameterList", "Children": [
+      ]}
+      ,{"Token": "symbol", "Value": ")"}
+      ,{"Token": "subroutineBody", "Children": [
+          {"Token": "symbol", "Value": "{"}
+         ,{"Token": "statements", "Children": [
+             {"Token": "ifStatement", "Children": [
+                {"Token": "keyword", "Value": "if"}
+               ,{"Token": "symbol", "Value": "("}
+               ,{"Token": "expression", "Children": [
+                   {"Token": "term", "Children": [
+                      {"Token": "identifier", "Value": "y", "Kind": "FIELD", "Type": "int", "Index": "1"}
+                  ]}
+                  ,{"Token": "symbol", "Value": "\u003e"}
+                  ,{"Token": "term", "Children": [
+                      {"Token": "integerConstant", "Value": "1"}
+                  ]}
+               ]}
+               ,{"Token": "symbol", "Value": ")"}
+               ,{"Token": "symbol", "Value": "{"}
+               ,{"Token": "statements", "Children": [
+                   {"Token": "doStatement", "Children": [
+                      {"Token": "keyword", "Value": "do"}
+                     ,{"Token": "identifier", "Value": "Screen", "Kind": "NONE", "Type": "", "Index": "0"}
+                     ,{"Token": "symbol", "Value": "."}
+                     ,{"Token": "identifier", "Value": "setColor", "Kind": "NONE", "Type": "", "Index": "0"}
+                     ,{"Token": "symbol", "Value": "("}
+                     ,{"Token": "expressionList", "Children": [
+                         {"Token": "expression", "Children": [
+                            {"Token": "term", "Children": [
+                               {"Token": "keyword", "Value": "false"}
+                           ]}
+                        ]}
+                     ]}
+                     ,{"Token": "symbol", "Value": ")"}
+                     ,{"Token": "symbol", "Value": ";"}
+                  ]}
+                  ,{"Token": "doStatement", "Children": [
+                      {"Token": "keyword", "Value": "do"}
+                     ,{"Token": "identifier", "Value": "Screen", "Kind": "NONE", "Type": "", "Index": "0"}
+                     ,{"Token": "symbol", "Value": "."}
+                     ,{"Token": "identifier", "Value": "drawRectangle", "Kind": "NONE", "Type": "", "Index": "0"}
+                     ,{"Token": "symbol", "Value": "("}
+                     ,{"Token": "expressionList", "Children": [
+                         {"Token": "expression", "Children": [
+                            {"Token": "term", "Children": [
+                               {"Token": "identifier", "Value": "x", "Kind": "FIELD", "Type": "int", "Index": "0"}
+                           ]}
+                        ]}
+                        ,{"Token": "symbol", "Value": ","}
+                        ,{"Token": "expression", "Children": [
+                            {"Token": "term", "Children": [
+                               {"Token": "symbol", "Value": "("}
+                              ,{"Token": "expression", "Children": [
+                                  {"Token": "term", "Children": [
+                                     {"Token": "identifier", "Value": "y", "Kind": "FIELD", "Type": "int", "Index": "1"}
+                                 ]}
+                                 ,{"Token": "symbol", "Value": "+"}
+                                 ,{"Token": "term", "Children": [
+                                     {"Token": "identifier", "Value": "size", "Kind": "FIELD", "Type": "int", "Index": "2"}
+                                 ]}
+                              ]}
+                              ,{"Token": "symbol", "Value": ")"}
+                           ]}
+                           ,{"Token": "symbol", "Value": "-"}
+                           ,{"Token": "term", "Children": [
+                               {"Token": "integerConstant", "Value": "1"}
+                           ]}
+                        ]}
+                        ,{"Token": "symbol", "Value": ","}
+                        ,{"Token": "expression", "Children": [
+                            {"Token": "term", "Children": [
+                               {"Token": "identifier", "Value": "x", "Kind": "FIELD", "Type": "int", "Index": "0"}
+                           ]}
+                           ,{"Token": "symbol", "Value": "+"}
+                           ,{"Token": "term", "Children": [
+                               {"Token": "identifier", "Value": "size", "Kind": "FIELD", "Type": "int", "Index": "2"}
+                           ]}
+                        ]}
+                        ,{"Token": "symbol", "Value": ","}
+                        ,{"Token": "expression", "Children": [
+                            {"Token": "term", "Children": [
+                               {"Token": "identifier", "Value": "y", "Kind": "FIELD", "Type": "int", "Index": "1"}
+                           ]}
+                           ,{"Token": "symbol", "Value": "+"}
+                           ,{"Token": "term", "Children": [
+                               {"Token": "identifier", "Value": "size", "Kind": "FIELD", "Type": "int", "Index": "2"}
+                           ]}
+                        ]}
+                     ]}
+                     ,{"Token": "symbol", "Value": ")"}
+                     ,{"Token": "symbol", "Value": ";"}
+                  ]}
+                  ,{"Token": "letStatement", "Children": [
+                      {"Token": "keyword", "Value": "let"}
+                     ,{"Token": "identifier", "Value": "y", "Kind": "FIELD", "Type": "int", "Index": "1"}
+                     ,{"Token": "symbol", "Value": "="}
+                     ,{"Token": "expression", "Children": [
+                         {"Token": "term", "Children": [
+                            {"Token": "identifier", "Value": "y", "Kind": "FIELD", "Type": "int", "Index": "1"}
+                        ]}
+                        ,{"Token": "symbol", "Value": "-"}
+                        ,{"Token": "term", "Children": [
+                            {"Token": "integerConstant", "Value": "2"}
+                        ]}
+                     ]}
+                     ,{"Token": "symbol", "Value": ";"}
+                  ]}
+                  ,{"Token": "doStatement", "Children": [
+                      {"Token": "keyword", "Value": "do"}
+                     ,{"Token": "identifier", "Value": "Screen", "Kind": "NONE", "Type": "", "Index": "0"}
+                     ,{"Token": "symbol", "Value": "."}
+                     ,{"Token": "identifier", "Value": "setColor", "Kind": "NONE", "Type": "", "Index": "0"}
+                     ,{"Token": "symbol", "Value": "("}
+                     ,{"Token": "expressionList", "Children": [
+                         {"Token": "expression", "Children": [
+                            {"Token": "term", "Children": [
+                               {"Token": "keyword", "Value": "true"}
+                           ]}
+                        ]}
+                     ]}
+                     ,{"Token": "symbol", "Value": ")"}
+                     ,{"Token": "symbol", "Value": ";"}
+                  ]}
+                  ,{"Token": "doStatement", "Children": [
+                      {"Token": "keyword", "Value": "do"}
+                     ,{"Token": "identifier", "Value": "Screen", "Kind": "NONE", "Type": "", "Index": "0"}
+                     ,{"Token": "symbol", "Value": "."}
+                     ,{"Token": "identifier", "Value": "drawRectangle", "Kind": "NONE", "Type": "", "Index": "0"}
+                     ,{"Token": "symbol", "Value": "("}
+                     ,{"Token": "expressionList", "Children": [
+                         {"Token": "expression", "Children": [
+                            {"Token": "term", "Children": [
+                               {"Token": "identifier", "Value": "x", "Kind": "FIELD", "Type": "int", "Index": "0"}
+                           ]}
+                        ]}
+                        ,{"Token": "symbol", "Value": ","}
+                        ,{"Token": "expression", "Children": [
+                            {"Token": "term", "Children": [
+                               {"Token": "identifier", "Value": "y", "Kind": "FIELD", "Type": "int", "Index": "1"}
+                           ]}
+                        ]}
+                        ,{"Token": "symbol", "Value": ","}
+                        ,{"Token": "expression", "Children": [
+                            {"Token": "term", "Children": [
+                               {"Token": "identifier", "Value": "x", "Kind": "FIELD", "Type": "int", "Index": "0"}
+                           ]}
+                           ,{"Token": "symbol", "Value": "+"}
+                           ,{"Token": "term", "Children": [
+                               {"Token": "identifier", "Value": "size", "Kind": "FIELD", "Type": "int", "Index": "2"}
+                           ]}
+                        ]}
+                        ,{"Token": "symbol", "Value": ","}
+                        ,{"Token": "expression", "Children": [
+                            {"Token": "term", "Children": [
+                               {"Token": "identifier", "Value": "y", "Kind": "FIELD", "Type": "int", "Index": "1"}
+                           ]}
+                           ,{"Token": "symbol", "Value": "+"}
+                           ,{"Token": "term", "Children": [
+                               {"Token": "integerConstant", "Value": "1"}
+                           ]}
+                        ]}
+                     ]}
+                     ,{"Token": "symbol", "Value": ")"}
+                     ,{"Token": "symbol", "Value": ";"}
+                  ]}
+               ]}
+               ,{"Token": "symbol", "Value": "}"}
+            ]}
+            ,{"Token": "returnStatement", "Children": [
+                {"Token": "keyword", "Value": "return"}
+               ,{"Token": "symbol", "Value": ";"}
+            ]}
+         ]}
+         ,{"Token": "symbol", "Value": "}"}
+      ]}
+   ]}
+   ,{"Token": "subroutineDec", "VarCount": "0", "Children": [
+       {"Token": "keyword", "Value": "method"}
+      ,{"Token": "keyword", "Value": "void"}
+      ,{"Token": "identifier", "Value": "moveDown", "Kind": "NONE", "Type": "void", "Index": "0"}
+      ,{"Token": "symbol", "Value": "("}
+      ,{"Token": "parameterList", "Children": [
+      ]}
+      ,{"Token": "symbol", "Value": ")"}
+      ,{"Token": "subroutineBody", "Children": [
+          {"Token": "symbol", "Value": "{"}
+         ,{"Token": "statements", "Children": [
+             {"Token": "ifStatement", "Children": [
+                {"Token": "keyword", "Value": "if"}
+               ,{"Token": "symbol", "Value": "("}
+               ,{"Token": "expression", "Children": [
+                   {"Token": "term", "Children": [
+                      {"Token": "symbol", "Value": "("}
+                     ,{"Token": "expression", "Children": [
+                         {"Token": "term", "Children": [
+                            {"Token": "identifier", "Value": "y", "Kind": "FIELD", "Type": "int", "Index": "1"}
+                        ]}
+                        ,{"Token": "symbol", "Value": "+"}
+                        ,{"Token": "term", "Children": [
+                            {"Token": "identifier", "Value": "size", "Kind": "FIELD", "Type": "int", "Index": "2"}
+                        ]}
+                     ]}
+                     ,{"Token": "symbol", "Value": ")"}
+                  ]}
+                  ,{"Token": "symbol", "Value": "\u003c"}
+                  ,{"Token": "term", "Children": [
+                      {"Token": "integerConstant", "Value": "254"}
+                  ]}
+               ]}
+               ,{"Token": "symbol", "Value": ")"}
+               ,{"Token": "symbol", "Value": "{"}
+               ,{"Token": "statements", "Children": [
+                   {"Token": "doStatement", "Children": [
+                      {"Token": "keyword", "Value": "do"}
+                     ,{"Token": "identifier", "Value": "Screen", "Kind": "NONE", "Type": "", "Index": "0"}
+                     ,{"Token": "symbol", "Value": "."}
+                     ,{"Token": "identifier", "Value": "setColor", "Kind": "NONE", "Type": "", "Index": "0"}
+                     ,{"Token": "symbol", "Value": "("}
+                     ,{"Token": "expressionList", "Children": [
+                         {"Token": "expression", "Children": [
+                            {"Token": "term", "Children": [
+                               {"Token": "keyword", "Value": "false"}
+                           ]}
+                        ]}
+                     ]}
+                     ,{"Token": "symbol", "Value": ")"}
+                     ,{"Token": "symbol", "Value": ";"}
+                  ]}
+                  ,{"Token": "doStatement", "Children": [
+                      {"Token": "keyword", "Value": "do"}
+                     ,{"Token": "identifier", "Value": "Screen", "Kind": "NONE", "Type": "", "Index": "0"}
+                     ,{"Token": "symbol", "Value": "."}
+                     ,{"Token": "identifier", "Value": "drawRectangle", "Kind": "NONE", "Type": "", "Index": "0"}
+                     ,{"Token": "symbol", "Value": "("}
+                     ,{"Token": "expressionList", "Children": [
+                         {"Token": "expression", "Children": [
+                            {"Token": "term", "Children": [
+                               {"Token": "identifier", "Value": "x", "Kind": "FIELD", "Type": "int", "Index": "0"}
+                           ]}
+                        ]}
+                        ,{"Token": "symbol", "Value": ","}
+                        ,{"Token": "expression", "Children": [
+                            {"Token": "term", "Children": [
+                               {"Token": "identifier", "Value": "y", "Kind": "FIELD", "Type": "int", "Index": "1"}
+                           ]}
+                        ]}
+                        ,{"Token": "symbol", "Value": ","}
+                        ,{"Token": "expression", "Children": [
+                            {"Token": "term", "Children": [
+                               {"Token": "identifier", "Value": "x", "Kind": "FIELD", "Type": "int", "Index": "0"}
+                           ]}
+                           ,{"Token": "symbol", "Value": "+"}
+                           ,{"Token": "term", "Children": [
+                               {"Token": "identifier", "Value": "size", "Kind": "FIELD", "Type": "int", "Index": "2"}
+                           ]}
+                        ]}
+                        ,{"Token": "symbol", "Value": ","}
+                        ,{"Token": "expression", "Children": [
+                            {"Token": "term", "Children": [
+                               {"Token": "identifier", "Value": "y", "Kind": "FIELD", "Type": "int", "Index": "1"}
+                           ]}
+                           ,{"Token": "symbol", "Value": "+"}
+                           ,{"Token": "term", "Children": [
+                               {"Token": "integerConstant", "Value": "1"}
+                           ]}
+                        ]}
+                     ]}
+                     ,{"Token": "symbol", "Value": ")"}
+                     ,{"Token": "symbol", "Value": ";"}
+                  ]}
+                  ,{"Token": "letStatement", "Children": [
+                      {"Token": "keyword", "Value": "let"}
+                     ,{"Token": "identifier", "Value": "y", "Kind": "FIELD", "Type": "int", "Index": "1"}
+                     ,{"Token": "symbol", "Value": "="}
+                     ,{"Token": "expression", "Children": [
+                         {"Token": "term", "Children": [
+                            {"Token": "identifier", "Value": "y", "Kind": "FIELD", "Type": "int", "Index": "1"}
+                        ]}
+                        ,{"Token": "symbol", "Value": "+"}
+                        ,{"Token": "term", "Children": [
+                            {"Token": "integerConstant", "Value": "2"}
+                        ]}
+                     ]}
+                     ,{"Token": "symbol", "Value": ";"}
+                  ]}
+                  ,{"Token": "doStatement", "Children": [
+                      {"Token": "keyword", "Value": "do"}
+                     ,{"Token": "identifier", "Value": "Screen", "Kind": "NONE", "Type": "", "Index": "0"}
+                     ,{"Token": "symbol", "Value": "."}
+                     ,{"Token": "identifier", "Value": "setColor", "Kind": "NONE", "Type": "", "Index": "0"}
+                     ,{"Token": "symbol", "Value": "("}
+                     ,{"Token": "expressionList", "Children": [
+                         {"Token": "expression", "Children": [
+                            {"Token": "term", "Children": [
+                               {"Token": "keyword", "Value": "true"}
+                           ]}
+                        ]}
+                     ]}
+                     ,{"Token": "symbol", "Value": ")"}
+                     ,{"Token": "symbol", "Value": ";"}
+                  ]}
+                  ,{"Token": "doStatement", "Children": [
+                      {"Token": "keyword", "Value": "do"}
+                     ,{"Token": "identifier", "Value": "Screen", "Kind": "NONE", "Type": "", "Index": "0"}
+                     ,{"Token": "symbol", "Value": "."}
+                     ,{"Token": "identifier", "Value": "drawRectangle", "Kind": "NONE", "Type": "", "Index": "0"}
+                     ,{"Token": "symbol", "Value": "("}
+                     ,{"Token": "expressionList", "Children": [
+                         {"Token": "expression", "Children": [
+                            {"Token": "term", "Children": [
+                               {"Token": "identifier", "Value": "x", "Kind": "FIELD", "Type": "int", "Index": "0"}
+                           ]}
+                        ]}
+                        ,{"Token": "symbol", "Value": ","}
+                        ,{"Token": "expression", "Children": [
+                            {"Token": "term", "Children": [
+                               {"Token": "symbol", "Value": "("}
+                              ,{"Token": "expression", "Children": [
+                                  {"Token": "term", "Children": [
+                                     {"Token": "identifier", "Value": "y", "Kind": "FIELD", "Type": "int", "Index": "1"}
+                                 ]}
+                                 ,{"Token": "symbol", "Value": "+"}
+                                 ,{"Token": "term", "Children": [
+                                     {"Token": "identifier", "Value": "size", "Kind": "FIELD", "Type": "int", "Index": "2"}
+                                 ]}
+                              ]}
+                              ,{"Token": "symbol", "Value": ")"}
+                           ]}
+                           ,{"Token": "symbol", "Value": "-"}
+                           ,{"Token": "term", "Children": [
+                               {"Token": "integerConstant", "Value": "1"}
+                           ]}
+                        ]}
+                        ,{"Token": "symbol", "Value": ","}
+                        ,{"Token": "expression", "Children": [
+                            {"Token": "term", "Children": [
+                               {"Token": "identifier", "Value": "x", "Kind": "FIELD", "Type": "int", "Index": "0"}
+                           ]}
+                           ,{"Token": "symbol", "Value": "+"}
+                           ,{"Token": "term", "Children": [
+                               {"Token": "identifier", "Value": "size", "Kind": "FIELD", "Type": "int", "Index": "2"}
+                           ]}
+                        ]}
+                        ,{"Token": "symbol", "Value": ","}
+                        ,{"Token": "expression", "Children": [
+                            {"Token": "term", "Children": [
+                               {"Token": "identifier", "Value": "y", "Kind": "FIELD", "Type": "int", "Index": "1"}
+                           ]}
+                           ,{"Token": "symbol", "Value": "+"}
+                           ,{"Token": "term", "Children": [
+                               {"Token": "identifier", "Value": "size", "Kind": "FIELD", "Type": "int", "Index": "2"}
+                           ]}
+                        ]}
+                     ]}
+                     ,{"Token": "symbol", "Value": ")"}
+                     ,{"Token": "symbol", "Value": ";"}
+                  ]}
+               ]}
+               ,{"Token": "symbol", "Value": "}"}
+            ]}
+            ,{"Token": "returnStatement", "Children": [
+                {"Token": "keyword", "Value": "return"}
+               ,{"Token": "symbol", "Value": ";"}
+            ]}
+         ]}
+         ,{"Token": "symbol", "Value": "}"}
+      ]}
+   ]}
+   ,{"Token": "subroutineDec", "VarCount": "0", "Children": [
+       {"Token": "keyword", "Value": "method"}
+      ,{"Token": "keyword", "Value": "void"}
+      ,{"Token": "identifier", "Value": "moveLeft", "Kind": "NONE", "Type": "void", "Index": "0"}
+      ,{"Token": "symbol", "Value": "("}
+      ,{"Token": "parameterList", "Children": [
+      ]}
+      ,{"Token": "symbol", "Value": ")"}
+      ,{"Token": "subroutineBody", "Children": [
+          {"Token": "symbol", "Value": "{"}
+         ,{"Token": "statements", "Children": [
+             {"Token": "ifStatement", "Children": [
+                {"Token": "keyword", "Value": "if"}
+               ,{"Token": "symbol", "Value": "("}
+               ,{"Token": "expression", "Children": [
+                   {"Token": "term", "Children": [
+                      {"Token": "identifier", "Value": "x", "Kind": "FIELD", "Type": "int", "Index": "0"}
+                  ]}
+                  ,{"Token": "symbol", "Value": "\u003e"}
+                  ,{"Token": "term", "Children": [
+                      {"Token": "integerConstant", "Value": "1"}
+                  ]}
+               ]}
+               ,{"Token": "symbol", "Value": ")"}
+               ,{"Token": "symbol", "Value": "{"}
+               ,{"Token": "statements", "Children": [
+                   {"Token": "doStatement", "Children": [
+                      {"Token": "keyword", "Value": "do"}
+                     ,{"Token": "identifier", "Value": "Screen", "Kind": "NONE", "Type": "", "Index": "0"}
+                     ,{"Token": "symbol", "Value": "."}
+                     ,{"Token": "identifier", "Value": "setColor", "Kind": "NONE", "Type": "", "Index": "0"}
+                     ,{"Token": "symbol", "Value": "("}
+                     ,{"Token": "expressionList", "Children": [
+                         {"Token": "expression", "Children": [
+                            {"Token": "term", "Children": [
+                               {"Token": "keyword", "Value": "false"}
+                           ]}
+                        ]}
+                     ]}
+                     ,{"Token": "symbol", "Value": ")"}
+                     ,{"Token": "symbol", "Value": ";"}
+                  ]}
+                  ,{"Token": "doStatement", "Children": [
+                      {"Token": "keyword", "Value": "do"}
+                     ,{"Token": "identifier", "Value": "Screen", "Kind": "NONE", "Type": "", "Index": "0"}
+                     ,{"Token": "symbol", "Value": "."}
+                     ,{"Token": "identifier", "Value": "drawRectangle", "Kind": "NONE", "Type": "", "Index": "0"}
+                     ,{"Token": "symbol", "Value": "("}
+                     ,{"Token": "expressionList", "Children": [
+                         {"Token": "expression", "Children": [
+                            {"Token": "term", "Children": [
+                               {"Token": "symbol", "Value": "("}
+                              ,{"Token": "expression", "Children": [
+                                  {"Token": "term", "Children": [
+                                     {"Token": "identifier", "Value": "x", "Kind": "FIELD", "Type": "int", "Index": "0"}
+                                 ]}
+                                 ,{"Token": "symbol", "Value": "+"}
+                                 ,{"Token": "term", "Children": [
+                                     {"Token": "identifier", "Value": "size", "Kind": "FIELD", "Type": "int", "Index": "2"}
+                                 ]}
+                              ]}
+                              ,{"Token": "symbol", "Value": ")"}
+                           ]}
+                           ,{"Token": "symbol", "Value": "-"}
+                           ,{"Token": "term", "Children": [
+                               {"Token": "integerConstant", "Value": "1"}
+                           ]}
+                        ]}
+                        ,{"Token": "symbol", "Value": ","}
+                        ,{"Token": "expression", "Children": [
+                            {"Token": "term", "Children": [
+                               {"Token": "identifier", "Value": "y", "Kind": "FIELD", "Type": "int", "Index": "1"}
+                           ]}
+                        ]}
+                        ,{"Token": "symbol", "Value": ","}
+                        ,{"Token": "expression", "Children": [
+                            {"Token": "term", "Children": [
+                               {"Token": "identifier", "Value": "x", "Kind": "FIELD", "Type": "int", "Index": "0"}
+                           ]}
+                           ,{"Token": "symbol", "Value": "+"}
+                           ,{"Token": "term", "Children": [
+                               {"Token": "identifier", "Value": "size", "Kind": "FIELD", "Type": "int", "Index": "2"}
+                           ]}
+                        ]}
+                        ,{"Token": "symbol", "Value": ","}
+                        ,{"Token": "expression", "Children": [
+                            {"Token": "term", "Children": [
+                               {"Token": "identifier", "Value": "y", "Kind": "FIELD", "Type": "int", "Index": "1"}
+                           ]}
+                           ,{"Token": "symbol", "Value": "+"}
+                           ,{"Token": "term", "Children": [
+                               {"Token": "identifier", "Value": "size", "Kind": "FIELD", "Type": "int", "Index": "2"}
+                           ]}
+                        ]}
+                     ]}
+                     ,{"Token": "symbol", "Value": ")"}
+                     ,{"Token": "symbol", "Value": ";"}
+                  ]}
+                  ,{"Token": "letStatement", "Children": [
+                      {"Token": "keyword", "Value": "let"}
+                     ,{"Token": "identifier", "Value": "x", "Kind": "FIELD", "Type": "int", "Index": "0"}
+                     ,{"Token": "symbol", "Value": "="}
+                     ,{"Token": "expression", "Children": [
+                         {"Token": "term", "Children": [
+                            {"Token": "identifier", "Value": "x", "Kind": "FIELD", "Type": "int", "Index": "0"}
+                        ]}
+                        ,{"Token": "symbol", "Value": "-"}
+                        ,{"Token": "term", "Children": [
+                            {"Token": "integerConstant", "Value": "2"}
+                        ]}
+                     ]}
+                     ,{"Token": "symbol", "Value": ";"}
+                  ]}
+                  ,{"Token": "doStatement", "Children": [
+                      {"Token": "keyword", "Value": "do"}
+                     ,{"Token": "identifier", "Value": "Screen", "Kind": "NONE", "Type": "", "Index": "0"}
+                     ,{"Token": "symbol", "Value": "."}
+                     ,{"Token": "identifier", "Value": "setColor", "Kind": "NONE", "Type": "", "Index": "0"}
+                     ,{"Token": "symbol", "Value": "("}
+                     ,{"Token": "expressionList", "Children": [
+                         {"Token": "expression", "Children": [
+                            {"Token": "term", "Children": [
+                               {"Token": "keyword", "Value": "true"}
+                           ]}
+                        ]}
+                     ]}
+                     ,{"Token": "symbol", "Value": ")"}
+                     ,{"Token": "symbol", "Value": ";"}
+                  ]}
+                  ,{"Token": "doStatement", "Children": [
+                      {"Token": "keyword", "Value": "do"}
+                     ,{"Token": "identifier", "Value": "Screen", "Kind": "NONE", "Type": "", "Index": "0"}
+                     ,{"Token": "symbol", "Value": "."}
+                     ,{"Token": "identifier", "Value": "drawRectangle", "Kind": "NONE", "Type": "", "Index": "0"}
+                     ,{"Token": "symbol", "Value": "("}
+                     ,{"Token": "expressionList", "Children": [
+                         {"Token": "expression", "Children": [
+                            {"Token": "term", "Children": [
+                               {"Token": "identifier", "Value": "x", "Kind": "FIELD", "Type": "int", "Index": "0"}
+                           ]}
+                        ]}
+                        ,{"Token": "symbol", "Value": ","}
+                        ,{"Token": "expression", "Children": [
+                            {"Token": "term", "Children": [
+                               {"Token": "identifier", "Value": "y", "Kind": "FIELD", "Type": "int", "Index": "1"}
+                           ]}
+                        ]}
+                        ,{"Token": "symbol", "Value": ","}
+                        ,{"Token": "expression", "Children": [
+                            {"Token": "term", "Children": [
+                               {"Token": "identifier", "Value": "x", "Kind": "FIELD", "Type": "int", "Index": "0"}
+                           ]}
+                           ,{"Token": "symbol", "Value": "+"}
+                           ,{"Token": "term", "Children": [
+                               {"Token": "integerConstant", "Value": "1"}
+                           ]}
+                        ]}
+                        ,{"Token": "symbol", "Value": ","}
+                        ,{"Token": "expression", "Children": [
+                            {"Token": "term", "Children": [
+                               {"Token": "identifier", "Value": "y", "Kind": "FIELD", "Type": "int", "Index": "1"}
+                           ]}
+                           ,{"Token": "symbol", "Value": "+"}
+                           ,{"Token": "term", "Children": [
+                               {"Token": "identifier", "Value": "size", "Kind": "FIELD", "Type": "int", "Index": "2"}
+                           ]}
+                        ]}
+                     ]}
+                     ,{"Token": "symbol", "Value": ")"}
+                     ,{"Token": "symbol", "Value": ";"}
+                  ]}
+               ]}
+               ,{"Token": "symbol", "Value": "}"}
+            ]}
+            ,{"Token": "returnStatement", "Children": [
+                {"Token": "keyword", "Value": "return"}
+               ,{"Token": "symbol", "Value": ";"}
+            ]}
+         ]}
+         ,{"Token": "symbol", "Value": "}"}
+      ]}
+   ]}
+   ,{"Token": "subroutineDec", "VarCount": "0", "Children": [
+       {"Token": "keyword", "Value": "method"}
+      ,{"Token": "keyword", "Value": "void"}
+      ,{"Token": "identifier", "Value": "moveRight", "Kind": "NONE", "Type": "void", "Index": "0"}
+      ,{"Token": "symbol", "Value": "("}
+      ,{"Token": "parameterList", "Children": [
+      ]}
+      ,{"Token": "symbol", "Value": ")"}
+      ,{"Token": "subroutineBody", "Children": [
+          {"Token": "symbol", "Value": "{"}
+         ,{"Token": "statements", "Children": [
+             {"Token": "ifStatement", "Children": [
+                {"Token": "keyword", "Value": "if"}
+               ,{"Token": "symbol", "Value": "("}
+               ,{"Token": "expression", "Children": [
+                   {"Token": "term", "Children": [
+                      {"Token": "symbol", "Value": "("}
+                     ,{"Token": "expression", "Children": [
+                         {"Token": "term", "Children": [
+                            {"Token": "identifier", "Value": "x", "Kind": "FIELD", "Type": "int", "Index": "0"}
+                        ]}
+                        ,{"Token": "symbol", "Value": "+"}
+                        ,{"Token": "term", "Children": [
+                            {"Token": "identifier", "Value": "size", "Kind": "FIELD", "Type": "int", "Index": "2"}
+                        ]}
+                     ]}
+                     ,{"Token": "symbol", "Value": ")"}
+                  ]}
+                  ,{"Token": "symbol", "Value": "\u003c"}
+                  ,{"Token": "term", "Children": [
+                      {"Token": "integerConstant", "Value": "510"}
+                  ]}
+               ]}
+               ,{"Token": "symbol", "Value": ")"}
+               ,{"Token": "symbol", "Value": "{"}
+               ,{"Token": "statements", "Children": [
+                   {"Token": "doStatement", "Children": [
+                      {"Token": "keyword", "Value": "do"}
+                     ,{"Token": "identifier", "Value": "Screen", "Kind": "NONE", "Type": "", "Index": "0"}
+                     ,{"Token": "symbol", "Value": "."}
+                     ,{"Token": "identifier", "Value": "setColor", "Kind": "NONE", "Type": "", "Index": "0"}
+                     ,{"Token": "symbol", "Value": "("}
+                     ,{"Token": "expressionList", "Children": [
+                         {"Token": "expression", "Children": [
+                            {"Token": "term", "Children": [
+                               {"Token": "keyword", "Value": "false"}
+                           ]}
+                        ]}
+                     ]}
+                     ,{"Token": "symbol", "Value": ")"}
+                     ,{"Token": "symbol", "Value": ";"}
+                  ]}
+                  ,{"Token": "doStatement", "Children": [
+                      {"Token": "keyword", "Value": "do"}
+                     ,{"Token": "identifier", "Value": "Screen", "Kind": "NONE", "Type": "", "Index": "0"}
+                     ,{"Token": "symbol", "Value": "."}
+                     ,{"Token": "identifier", "Value": "drawRectangle", "Kind": "NONE", "Type": "", "Index": "0"}
+                     ,{"Token": "symbol", "Value": "("}
+                     ,{"Token": "expressionList", "Children": [
+                         {"Token": "expression", "Children": [
+                            {"Token": "term", "Children": [
+                               {"Token": "identifier", "Value": "x", "Kind": "FIELD", "Type": "int", "Index": "0"}
+                           ]}
+                        ]}
+                        ,{"Token": "symbol", "Value": ","}
+                        ,{"Token": "expression", "Children": [
+                            {"Token": "term", "Children": [
+                               {"Token": "identifier", "Value": "y", "Kind": "FIELD", "Type": "int", "Index": "1"}
+                           ]}
+                        ]}
+                        ,{"Token": "symbol", "Value": ","}
+                        ,{"Token": "expression", "Children": [
+                            {"Token": "term", "Children": [
+                               {"Token": "identifier", "Value": "x", "Kind": "FIELD", "Type": "int", "Index": "0"}
+                           ]}
+                           ,{"Token": "symbol", "Value": "+"}
+                           ,{"Token": "term", "Children": [
+                               {"Token": "integerConstant", "Value": "1"}
+                           ]}
+                        ]}
+                        ,{"Token": "symbol", "Value": ","}
+                        ,{"Token": "expression", "Children": [
+                            {"Token": "term", "Children": [
+                               {"Token": "identifier", "Value": "y", "Kind": "FIELD", "Type": "int", "Index": "1"}
+                           ]}
+                           ,{"Token": "symbol", "Value": "+"}
+                           ,{"Token": "term", "Children": [
+                               {"Token": "identifier", "Value": "size", "Kind": "FIELD", "Type": "int", "Index": "2"}
+                           ]}
+                        ]}
+                     ]}
+                     ,{"Token": "symbol", "Value": ")"}
+                     ,{"Token": "symbol", "Value": ";"}
+                  ]}
+                  ,{"Token": "letStatement", "Children": [
+                      {"Token": "keyword", "Value": "let"}
+                     ,{"Token": "identifier", "Value": "x", "Kind": "FIELD", "Type": "int", "Index": "0"}
+                     ,{"Token": "symbol", "Value": "="}
+                     ,{"Token": "expression", "Children": [
+                         {"Token": "term", "Children": [
+                            {"Token": "identifier", "Value": "x", "Kind": "FIELD", "Type": "int", "Index": "0"}
+                        ]}
+                        ,{"Token": "symbol", "Value": "+"}
+                        ,{"Token": "term", "Children": [
+                            {"Token": "integerConstant", "Value": "2"}
+                        ]}
+                     ]}
+                     ,{"Token": "symbol", "Value": ";"}
+                  ]}
+                  ,{"Token": "doStatement", "Children": [
+                      {"Token": "keyword", "Value": "do"}
+                     ,{"Token": "identifier", "Value": "Screen", "Kind": "NONE", "Type": "", "Index": "0"}
+                     ,{"Token": "symbol", "Value": "."}
+                     ,{"Token": "identifier", "Value": "setColor", "Kind": "NONE", "Type": "", "Index": "0"}
+                     ,{"Token": "symbol", "Value": "("}
+                     ,{"Token": "expressionList", "Children": [
+                         {"Token": "expression", "Children": [
+                            {"Token": "term", "Children": [
+                               {"Token": "keyword", "Value": "true"}
+                           ]}
+                        ]}
+                     ]}
+                     ,{"Token": "symbol", "Value": ")"}
+                     ,{"Token": "symbol", "Value": ";"}
+                  ]}
+                  ,{"Token": "doStatement", "Children": [
+                      {"Token": "keyword", "Value": "do"}
+                     ,{"Token": "identifier", "Value": "Screen", "Kind": "NONE", "Type": "", "Index": "0"}
+                     ,{"Token": "symbol", "Value": "."}
+                     ,{"Token": "identifier", "Value": "drawRectangle", "Kind": "NONE", "Type": "", "Index": "0"}
+                     ,{"Token": "symbol", "Value": "("}
+                     ,{"Token": "expressionList", "Children": [
+                         {"Token": "expression", "Children": [
+                            {"Token": "term", "Children": [
+                               {"Token": "symbol", "Value": "("}
+                              ,{"Token": "expression", "Children": [
+                                  {"Token": "term", "Children": [
+                                     {"Token": "identifier", "Value": "x", "Kind": "FIELD", "Type": "int", "Index": "0"}
+                                 ]}
+                                 ,{"Token": "symbol", "Value": "+"}
+                                 ,{"Token": "term", "Children": [
+                                     {"Token": "identifier", "Value": "size", "Kind": "FIELD", "Type": "int", "Index": "2"}
+                                 ]}
+                              ]}
+                              ,{"Token": "symbol", "Value": ")"}
+                           ]}
+                           ,{"Token": "symbol", "Value": "-"}
+                           ,{"Token": "term", "Children": [
+                               {"Token": "integerConstant", "Value": "1"}
+                           ]}
+                        ]}
+                        ,{"Token": "symbol", "Value": ","}
+                        ,{"Token": "expression", "Children": [
+                            {"Token": "term", "Children": [
+                               {"Token": "identifier", "Value": "y", "Kind": "FIELD", "Type": "int", "Index": "1"}
+                           ]}
+                        ]}
+                        ,{"Token": "symbol", "Value": ","}
+                        ,{"Token": "expression", "Children": [
+                            {"Token": "term", "Children": [
+                               {"Token": "identifier", "Value": "x", "Kind": "FIELD", "Type": "int", "Index": "0"}
+                           ]}
+                           ,{"Token": "symbol", "Value": "+"}
+                           ,{"Token": "term", "Children": [
+                               {"Token": "identifier", "Value": "size", "Kind": "FIELD", "Type": "int", "Index": "2"}
+                           ]}
+                        ]}
+                        ,{"Token": "symbol", "Value": ","}
+                        ,{"Token": "expression", "Children": [
+                            {"Token": "term", "Children": [
+                               {"Token": "identifier", "Value": "y", "Kind": "FIELD", "Type": "int", "Index": "1"}
+                           ]}
+                           ,{"Token": "symbol", "Value": "+"}
+                           ,{"Token": "term", "Children": [
+                               {"Token": "identifier", "Value": "size", "Kind": "FIELD", "Type": "int", "Index": "2"}
+                           ]}
+                        ]}
+                     ]}
+                     ,{"Token": "symbol", "Value": ")"}
+                     ,{"Token": "symbol", "Value": ";"}
+                  ]}
+               ]}
+               ,{"Token": "symbol", "Value": "}"}
+            ]}
+            ,{"Token": "returnStatement", "Children": [
+                {"Token": "keyword", "Value": "return"}
+               ,{"Token": "symbol", "Value": ";"}
+            ]}
+         ]}
+         ,{"Token": "symbol", "Value": "}"}
+      ]}
+   ]}
+   ,{"Token": "symbol", "Value": "}"}
+]}

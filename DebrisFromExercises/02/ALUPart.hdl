@@ -1,0 +1,17 @@
+  
+CHIP ALUPart {
+    IN  
+        in[16],
+        z,
+        n;
+
+    OUT 
+        out[16];
+
+    PARTS:
+		
+		Mux16(a=in, b[0..15]=false, sel=z, out=zIn);
+		Not16(in=zIn, out=notZIn);
+		Mux16(a=zIn, b=notZIn, sel=n, out=out);
+		
+}

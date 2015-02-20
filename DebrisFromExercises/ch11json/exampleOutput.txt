@@ -1,0 +1,8 @@
+I'm in CLASS PongGame
+    CONSTRUCTOR "new" returns a PongGame, it has 0 local variables, oh and the class has 7 fields.
+    METHOD "dispose" returns a void, it has 0 local variables.
+    FUNCTION "newInstance" returns a void, it has 0 local variables.
+    FUNCTION "getInstance" returns a PongGame, it has 0 local variables.
+    METHOD "run" returns a void, it has 1 local variables.
+    METHOD "moveBall" returns a void, it has 5 local variables.
+Ding, ding, end of CLASS PongGame
